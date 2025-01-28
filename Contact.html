@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tangoline.inc-Contact</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body id="body">
+
+    <!-- Loader -->
+  <div id="loader" class="loader">
+    <div class="cube">
+      <div class="sides">
+       <div class="top"></div>
+       <div class="right"></div>
+       <div class="bottom"></div>
+       <div class="left"></div>
+       <div class="front"></div>
+       <div class="back"></div>
+      </div>
+    </div>
+    <div class="text"><h2>TANG</h2><img class="imgcon" src="./conb.png" alt=""><h2>LINE</h2></div>
+  </div>
+     <header>
+        <div  class=" navhead">
+            <div class="LOGO"><h2>TANG </h2><img class="imgcon" src="./conb.png" alt=""><h2>LINE</h2></div>
+            <div class="signin"><button id="signin">Sign in</button></div>
+            <div class="container" onclick="toggleMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>  
+              </div>
+              
+              <ul id="menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./Games.html">Games</a></li>
+                <li><a href="./VRZone.html">VR Zone</a></li>
+                <li><a href="./Contact.html">Contact</a></li>
+                <li><button onclick="Signin()" id="sign">Sign in</button></li>
+                <li>
+    </header>
+     
+    <div class="Contact">
+        <h3>Tangoline/Contact</h2>
+        <!-- navbar section -->
+        <header id="head1">
+            <div  class="navbar">
+                <div class="LOGO"><h2>TANG </h2><img class="imgcon" src="./conb.png" alt=""><h2>LINE</h2></div>
+                <div class="container" onclick="toggleMenu(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>  
+                  </div>
+
+                  <ul id="menu">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./Games.html">Games</a></li>
+                    <li><a href="./VRZone.html">VR Zone</a></li>
+                    <li><a href="./Contact.html">Contact</a></li>
+                    <li><button onclick="Signin()" id="sign">Sign in</button></li>
+                </ul>
+            </div>
+        </header>
+    <!-- navbar section -->
+  </div> 
+
+  <div class="SignOn">
+    <div class="SignOn-Container">
+
+        <div onclick="signinupclose()" class="signin-up-close">
+        <i class="fa-solid fa-x"></i>
+        </div>
+
+        <div class="sign-On-cover">
+            <h2>Sign Up</h2>
+            <p>Not have an account? <span onclick="SignupOpen()">Create a new account</span></p>
+            <div class="sign-up-info">
+              <p>Join our community today and start exploring!</p>
+              <button onclick="SignupOpen()">Sign Up Now</button>
+            </div>
+        </div>  
+        <div class="sign-in-cover">
+          <h2>Sign In</h2>
+          <p>Already have an account? <span onclick="SigninOpen()">Sign in now</span></p>
+          <div class="sign-in-info">
+             <p>Welcome back to the world of gaming!</p>
+             <button onclick="SigninOpen()">Sign In Now</button>
+          </div>
+        </div>
+
+        <form class="signInForm">
+          <h2>Sign In</h2>
+          <input type="text" placeholder="Username or Email Address" required="Email" />
+          <input type="password" placeholder="Password" required="Password" />
+          <div class="remember-me">
+          <input type="checkbox" id="remember-me" /> <label for="remember-me">Remember me</label>  
+         </div>
+          <button onclick="signincom()" id="login" type="submit">Sign In</button>
+        </form>
+
+
+                <!-- Front Side -->
+                  <form class="signUpForm">
+                    <h2>Sign Up</h2>
+                  <input type="text" placeholder="First name" required="First Name" />
+                  <input type="text" placeholder="Last name" required="Last Name" />
+                  <input type="email" placeholder="Email Address" required="Email" />
+                  <input type="date" placeholder="Date of Birth" required max="2008-01-01" />
+                  <div class="Term">
+                  <input type="checkbox" id="Term" required="checked"/> <label for="Term">Terms & Conditions</label>  
+                  </div>
+                  <button onclick="Next()" class="Next" type="submit">Next</button>
+                </form>
+            </div>
+
+            <!-- Back Side -->
+            <div class="signUpback">
+                <h2>Sign Up</h2>
+                <input type="text" placeholder="Username must be at least 5-8 characters" required="Username" />
+                   <input type="password" placeholder="Password Atleast 8-20 characters" required=" password" />
+                   <input type="password" placeholder="Confirm Password Atleast 8-20 characters" required="Confirm Password" />
+                  <button onclick="signupcom()" type="submit">Sign Up</button>
+                </form>
+            </div>
+         </div>
+
+
+  <section class="project-team">
+    <h2>Project Team</h2>
+    <div class="team-member">
+        <div class="member-details">
+            <p class="member-number">01</p>
+            <p class="member-name">Ghulam Mohyuddin Wahaj</p>
+            <p class="member-role">Front-End Innovator.</p>
+        </div>
+    </div>
+    <div class="team-member">
+        <div class="member-details">
+            <p class="member-number">02</p>
+            <p class="member-name">Hadiqa Jawed</p>
+            <p class="member-role">Web Developer.</p>
+        </div>
+    </div>
+</section>
+
+    <section class="Contact-section">
+      <div class="form-container">
+          <h2>Get in Touch</h2>
+          <br>
+          <form action="#" method="post">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+              <br>
+              
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required>
+              <br>
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+              <br>
+              <button type="submit">Send</button>
+          </form>
+      </div>
+      <div class="map-container">
+          <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.831762956658!2d67.13812467504146!3d24.8987962771815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33fdd7c9d4a71%3A0x123456789abcdef!2sAptech%20Metro%20Star%20Gate!5e0!3m2!1sen!2s!4v1234567890123" 
+               style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+      </div>
+  </section>
+
+<!-- ||||||||||||||||||||||||||||||||||||||||  footer    ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <p>We are dedicated to bringing the latest video games and consoles to gamers worldwide. From the newest releases to retro classics, we have it all.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./Games.html">Games</a></li>
+                        <li><a href="./VRZone.html">VR Zone</a></li>
+                        <li><a href="./Contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>Email: onlineshop@tangoline.net</li>
+                        <li>Phone: +92 316 0255 319</li>
+                        <li>Location: Abc, XYZ Road, SDFFGsd, Karachi 3456, Sindhi, Pakistan.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-social">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2024 Aptech Project Tangoline.inc ©-All Rights Reserved.
+            </div>
+        </footer>
+       <!-- library links -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="./script.js"></script>
+<script src="./Games.js"></script>
+</body>
+</html>

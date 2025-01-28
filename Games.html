@@ -1,0 +1,1443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tangoline.inc-Games</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body id="G-body">
+
+    <!-- Loader -->
+  <div id="loader" class="loader">
+    <div class="cube">
+      <div class="sides">
+       <div class="top"></div>
+       <div class="right"></div>
+       <div class="bottom"></div>
+       <div class="left"></div>
+       <div class="front"></div>
+       <div class="back"></div>
+      </div>
+    </div>
+    <div class="text"><h2>TANG</h2><img class="imgcon" src="./conb.png" alt=""><h2>LINE</h2></div>
+  </div>
+     <header>
+        <div  class=" navhead">
+            <div class="LOGO"><h2>TANG </h2><img class="imgcon" src="./conb.png" alt=""><h2>LINE</h2></div>
+            <div class="signin"><button id="signin">Sign in</button></div>
+            <div class="container" onclick="toggleMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>  
+              </div>
+              
+              <ul id="menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./Games.html">Games</a></li>
+                <li><a href="./VRZone.html">VR Zone</a></li>
+                <li><a href="./Contact.html">Contact</a></li>
+                <li><button onclick="Signin()" id="sign">Sign in</button></li>
+                <li>
+    </header>
+     
+  <div class="Games">
+    <h3>Tangoline/Games</h2>
+        <!-- navbar section -->
+        <header id="head1">
+            <div  class="navbar">
+                <div class="LOGO"><h2>TANG </h2><img class="imgcon" src="./conb.png" alt=""><h2>LINE</h2></div>
+                <div class="container" onclick="toggleMenu(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>  
+                  </div>
+                  <ul id="menu">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./Games.html">Games</a></li>
+                    <li><a href="./VRZone.html">VR Zone</a></li>
+                    <li><a href="./Contact.html">Contact</a></li>
+                    <li><button onclick="Signin()" id="sign">Sign in</button></li>
+                </ul>
+            </div>
+        </header>
+        <!-- navbar section -->
+  </div>
+
+
+  <div class="SignOn">
+    <div class="SignOn-Container">
+
+        <div onclick="signinupclose()" class="signin-up-close">
+        <i class="fa-solid fa-x"></i>
+        </div>
+
+        <div class="sign-On-cover">
+            <h2>Sign Up</h2>
+            <p>Not have an account? <span onclick="SignupOpen()">Create a new account</span></p>
+            <div class="sign-up-info">
+              <p>Join our community today and start exploring!</p>
+              <button onclick="SignupOpen()">Sign Up Now</button>
+            </div>
+        </div>  
+        <div class="sign-in-cover">
+          <h2>Sign In</h2>
+          <p>Already have an account? <span onclick="SigninOpen()">Sign in now</span></p>
+          <div class="sign-in-info">
+             <p>Welcome back to the world of gaming!</p>
+             <button onclick="SigninOpen()">Sign In Now</button>
+          </div>
+        </div>
+
+        <form class="signInForm">
+          <h2>Sign In</h2>
+          <input type="text" placeholder="Username or Email Address" required="Email" />
+          <input type="password" placeholder="Password" required="Password" />
+          <div class="remember-me">
+          <input type="checkbox" id="remember-me" /> <label for="remember-me">Remember me</label>  
+         </div>
+          <button onclick="signincom()" id="login" type="submit">Sign In</button>
+        </form>
+
+
+                <!-- Front Side -->
+                  <form class="signUpForm">
+                    <h2>Sign Up</h2>
+                  <input type="text" placeholder="First name" required="First Name" />
+                  <input type="text" placeholder="Last name" required="Last Name" />
+                  <input type="email" placeholder="Email Address" required="Email" />
+                  <input type="date" placeholder="Date of Birth" required max="2008-01-01" />
+                  <div class="Term">
+                  <input type="checkbox" id="Term" required="checked"/> <label for="Term">Terms & Conditions</label>  
+                  </div>
+                  <button onclick="Next()" class="Next" type="submit">Next</button>
+                </form>
+            </div>
+
+            <!-- Back Side -->
+            <div class="signUpback">
+                <h2>Sign Up</h2>
+                <input type="text" placeholder="Username must be at least 5-8 characters" required="Username" />
+                   <input type="password" placeholder="Password Atleast 8-20 characters" required=" password" />
+                   <input type="password" placeholder="Confirm Password Atleast 8-20 characters" required="Confirm Password" />
+                  <button onclick="signupcom()" type="submit">Sign Up</button>
+                </form>
+            </div>
+         </div>
+
+         <!-- |||||||||||||||||||||||||||||   Filter |||||||||||||||||||||||||||||||||||||||||||| -->
+          
+<div class="Filters-container">
+    <button class="Filter">Filter <i class="fa-solid fa-filter"></i></button>
+  <div class="Filters">
+    <div class="Filter-options">
+        <h2>All Games</h2>
+        <input type="checkbox" id="all-games" checked>
+        <label for="all-games">All Games</label>
+        <h2>Filter by Genre</h2>
+        <input type="checkbox" id="simulation" data-filter="genre" value="Simulation">
+        <label for="simulation">Simulation</label>
+        <input type="checkbox" id="puzzle" data-filter="genre" value="Puzzle">
+        <label for="puzzle">Puzzle</label>
+        <input type="checkbox" id="sandbox" data-filter="genre" value="Sandbox">
+        <label for="sandbox">Sandbox</label>
+        <input type="checkbox" id="fps" data-filter="genre" value="FPS">
+        <label for="fps">FPS</label>
+        <input type="checkbox" id="racing" data-filter="genre" value="Racing">
+        <label for="racing">Racing</label>
+        <input type="checkbox" id="moba" data-filter="genre" value="MOBA">
+        <label for="moba">MOBA</label>
+        <input type="checkbox" id="strategy" data-filter="genre" value="Strategy">
+        <label for="strategy">Strategy</label>
+        <input type="checkbox" id="card-game" data-filter="genre" value="Card Game">
+        <label for="card-game">Card Game</label>
+        <input type="checkbox" id="battle-royale" data-filter="genre" value="Battle Royale">
+        <label for="battle-royale">Battle Royale</label>
+        <input type="checkbox" id="action" data-filter="genre" value="Action">
+        <label for="action">Action</label>
+        <input type="checkbox" id="action-adventure" data-filter="genre" value="Action-Adventure">
+        <label for="action-adventure">Action-Adventure</label>
+        <input type="checkbox" id="shooter" data-filter="genre" value="Shooter">
+        <label for="shooter">Shooter</label>
+        <input type="checkbox" id="rpg" data-filter="genre" value="RPG">
+        <label for="rpg">RPG</label>
+        <input type="checkbox" id="visual-novel" data-filter="genre" value="Visual Novel">
+        <label for="visual-novel">Visual Novel</label>
+        <input type="checkbox" id="fighting" data-filter="genre" value="Fighting">
+        <label for="fighting">Fighting</label>
+        <input type="checkbox" id="vr-games" data-filter="genre" value="VR-Games">
+        <label for="vr-games">VR-Games</label>
+    </div>
+
+    <div class="Filter-options">
+        <h2>Filter by Company</h2>
+        <input type="checkbox" id="microsoft" data-filter="company" value="Microsoft Gaming">
+        <label for="microsoft">Microsoft Gaming</label>
+        <input type="checkbox" id="riot" data-filter="company" value="Riot Games">
+        <label for="riot">Riot Games</label>
+        <input type="checkbox" id="sony" data-filter="company" value="Sony Interactive Entertainment">
+        <label for="sony">Sony Interactive Entertainment</label>
+        <input type="checkbox" id="mihoyo" data-filter="company" value="miHoYo">
+        <label for="mihoyo">miHoYo</label>
+        <input type="checkbox" id="bandai" data-filter="company" value="Bandai Namco Entertainment">
+        <label for="bandai">Bandai Namco Entertainment</label>
+        <input type="checkbox" id="koei" data-filter="company" value="Koei Tecmo">
+        <label for="koei">Koei Tecmo</label>
+        <input type="checkbox" id="netherrealm" data-filter="company" value="NetherRealm Studios">
+        <label for="netherrealm">NetherRealm Studios</label>
+        <input type="checkbox" id="capcom" data-filter="company" value="Capcom">
+        <label for="capcom">Capcom</label>
+        <input type="checkbox" id="beat" data-filter="company" value="Beat Games">
+        <label for="beat">Beat Games</label>
+        <input type="checkbox" id="valve" data-filter="company" value="Valve Corporation">
+        <label for="valve">Valve Corporation</label>
+        <input type="checkbox" id="vrchat" data-filter="company" value="VRChat Inc.">
+        <label for="vrchat">VRChat Inc.</label>
+        <input type="checkbox" id="stress-level-zero" data-filter="company" value="Stress Level Zero">
+        <label for="stress-level-zero">Stress Level Zero</label>
+    </div>
+  </div>
+</div>
+
+
+    <div  class="Gameslist">
+       <!-- game list -->
+        <div class="Game-cards">
+      <div class="Game-card"  data-genre="RPG" data-name="SAO-Series" data-company="Bandai Namco Entertainment">
+        <img src="./Bandai/SAO/frag-0.png" alt="Sword Art Online">
+        <div class="Game-card-info">
+            <div class="Game-card-img">
+                <img src="./Bandai/SAO/frag-0.png" alt="LOGO">
+            </div>
+            <div class="Game-card-text">
+                <h3>Sword Art Online: Holo Fragment</h3>
+                <p>RPG . Bandai Namco Entertainment Inc.</p>
+                <span class="rating" data-rating="4.5">4.5/5
+                    <span class="stars">
+                        <span class="star-filled">⭐</span>
+                        <span class="star-filled">⭐</span>
+                        <span class="star-filled">⭐</span>
+                        <span class="star-filled">⭐</span>
+                        <span class="star">⭐</span>
+                    </span>
+                </span>
+            </div>
+             <!-- Download Button -->
+        <div class="download-btn-container">
+            <a href="./Games.html" class="download-btn" download>Download Now</a>
+        </div>
+        </div>
+     </div>
+
+     <div class="Game-card" data-genre="Simulation" data-company="Microsoft Gaming"> 
+    <img src="./MC/Roblox-1.jpg" alt="Roblox">
+    <div class="Game-card-info">
+        <div class="Game-card-img">
+            <img src="./MC/Roblox-0.png" alt="LOGO">
+        </div>
+        <div class="Game-card-text">
+            <h3>Roblox</h3>
+            <p>Simulation . Microsoft Gaming</p>
+            <span class="rating" data-rating="4.9">4.9/5
+                <span class="stars">
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star">⭐</span>
+                </span>
+            </span>
+        </div>
+         <!-- Download Button -->
+         <div class="download-btn-container">
+            <a href="./Games.html" class="download-btn" download>Download Now</a>
+        </div>
+    </div>
+</div>
+
+<div class="Game-card" data-genre="Puzzle" data-company="Microsoft Gaming"> 
+    <img src="./MC/candy-c1.jpg" alt="Candy Crush Soda Saga">
+    <div class="Game-card-info">
+        <div class="Game-card-img">
+            <img src="./MC/candy-c0.jpg" alt="LOGO">
+        </div>
+        <div class="Game-card-text">
+            <h3>Candy Crush Soda Saga</h3>
+            <p>Puzzle . Microsoft Gaming</p>
+            <span class="rating" data-rating="4.4">4.4/5
+                <span class="stars">
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star">⭐</span>
+                </span>
+            </span>
+        </div>
+         <!-- Download Button -->
+         <div class="download-btn-container">
+            <a href="./Games.html" class="download-btn" download>Download Now</a>
+        </div>
+    </div>
+</div>
+
+<div class="Game-card" data-genre="Sandbox" data-company="Microsoft Gaming"> 
+    <img src="./MC/Minecraft-1.jpg" alt="Minecraft">
+    <div class="Game-card-info">
+        <div class="Game-card-img">
+            <img src="./MC/Minecraft-0.jpg" alt="LOGO">
+        </div>
+        <div class="Game-card-text">
+            <h3>Minecraft</h3>
+            <p>Sandbox . Microsoft Gaming</p>
+            <span class="rating" data-rating="4.9">4.9/5
+                <span class="stars">
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star">⭐</span>
+                </span>
+            </span>
+        </div>
+         <!-- Download Button -->
+         <div class="download-btn-container">
+            <a href="./Games.html" class="download-btn" download>Download Now</a>
+        </div>
+    </div>
+</div>
+
+<div class="Game-card" data-genre="Shooter" data-company="Microsoft Gaming"> 
+    <img src="./MC/Halo-00.jpg" alt="Halo">
+    <div class="Game-card-info">
+        <div class="Game-card-img">
+            <img src="./MC/Halo-0.jpg" alt="LOGO">
+        </div>
+        <div class="Game-card-text">
+            <h3>Halo</h3>
+            <p>Shooter . Microsoft Gaming</p>
+            <span class="rating" data-rating="4.9">4.7/5
+                <span class="stars">
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star">⭐</span>
+                </span>
+            </span>
+        </div>
+         <!-- Download Button -->
+         <div class="download-btn-container">
+            <a href="./Games.html" class="download-btn" download>Download Now</a>
+        </div>
+    </div>
+</div>
+
+<div class="Game-card" data-genre="Racing" data-company="Microsoft Gaming"> 
+    <img src="./MC/forza-0.jpg" alt="Forza Horizon">
+    <div class="Game-card-info">
+        <div class="Game-card-img">
+            <img src="./MC/forza-1.jpg" alt="LOGO">
+        </div>
+        <div class="Game-card-text">
+            <h3>Forza Horizon</h3>
+            <p>Racing . Microsoft Gaming</p>
+            <span class="rating" data-rating="4.9">4.9/5
+                <span class="stars">
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star">⭐</span>
+                </span>
+            </span>
+        </div>
+         <!-- Download Button -->
+         <div class="download-btn-container">
+            <a href="./Games.html" class="download-btn" download>Download Now</a>
+        </div>
+    </div>
+</div>
+
+<!-- Riot Games -->
+<div class="Game-card" data-genre="MOBA" data-company="Riot Games"> 
+    <img src="./Riot/LOL-2.jpeg" alt="League of Legends">
+    <div class="Game-card-info">
+        <div class="Game-card-img">
+            <img src="./Riot/LOL-1.png" alt="LOGO">
+        </div>
+        <div class="Game-card-text">
+            <h3>League of Legends</h3>
+            <p>MOBA . Riot Games</p>
+            <span class="rating" data-rating="4.8">4.8/5
+                <span class="stars">
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star">⭐</span>
+                </span>
+            </span>
+        </div>
+         <!-- Download Button -->
+         <div class="download-btn-container">
+            <a href="./Games.html" class="download-btn" download>Download Now</a>
+        </div>
+    </div>
+</div>
+
+<div class="Game-card" data-genre="FPS" data-company="Riot Games"> 
+    <img src="./Riot/Val-1.jpg" alt="Valorant">
+    <div class="Game-card-info">
+        <div class="Game-card-img">
+            <img src="./Riot/Val-0.png" alt="LOGO">
+        </div>
+        <div class="Game-card-text">
+            <h3>Valorant</h3>
+            <p>FPS . Riot Games</p>
+            <span class="rating" data-rating="4.6">4.6/5
+                <span class="stars">
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star">⭐</span>
+                </span>
+            </span>
+        </div>
+         <!-- Download Button -->
+         <div class="download-btn-container">
+            <a href="./Games.html" class="download-btn" download>Download Now</a>
+        </div>
+    </div>
+</div>
+
+<div class="Game-card" data-genre="Strategy" data-company="Riot Games"> 
+    <img src="./Riot/TFT-3.jpg" alt="Teamfight Tactics">
+    <div class="Game-card-info">
+        <div class="Game-card-img">
+            <img src="./Riot/TFT-1.jpg" alt="LOGO">
+        </div>
+        <div class="Game-card-text">
+            <h3>Teamfight Tactics</h3>
+            <p>Strategy . Riot Games</p>
+            <span class="rating" data-rating="4.8">4.8/5
+                <span class="stars">
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star">⭐</span>
+                </span>
+            </span>
+        </div>
+         <!-- Download Button -->
+         <div class="download-btn-container">
+            <a href="./Games.html" class="download-btn" download>Download Now</a>
+        </div>
+    </div>
+</div>
+
+<div class="Game-card" data-genre="Card Game" data-company="Riot Games"> 
+    <img src="./Riot/LOR-3.jpg" alt="Legends of Runeterra">
+    <div class="Game-card-info">
+        <div class="Game-card-img">
+            <img src="./Riot/LOR-0.jpg" alt="LOGO">
+        </div>
+        <div class="Game-card-text">
+            <h3>Legends of Runeterra</h3>
+            <p>Card Game . Riot Games</p>
+            <span class="rating" data-rating="4.7">4.7/5
+                <span class="stars">
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star">⭐</span>
+                </span>
+            </span>
+        </div>
+         <!-- Download Button -->
+         <div class="download-btn-container">
+            <a href="./Games.html" class="download-btn" download>Download Now</a>
+        </div>
+    </div>
+    </div>
+
+    <div class="Game-card" data-genre="Battle Royale" data-company="Riot Games">
+    <img src="./Riot/pubg-2.jpeg" alt="PUBG Mobile">
+    <div class="Game-card-info">
+        <div class="Game-card-img">
+            <img src="./Riot/PUBG-0.jpg" alt="LOGO">
+        </div>
+        <div class="Game-card-text">
+            <h3>PUBG Mobile</h3>
+            <p>Battle Royale . Riot Games</p>
+            <span class="rating" data-rating="4.5">4.5/5
+                <span class="stars">
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star">⭐</span>
+                </span>
+            </span>
+        </div>
+         <!-- Download Button -->
+         <div class="download-btn-container">
+            <a href="./Games.html" class="download-btn" download>Download Now</a>
+        </div>
+    </div>
+</div>
+<div class="Game-card" data-genre="MOBA" data-company="Riot Games"> 
+    <img src="./Riot/LOL-wild-0.jpg" alt="League of Legends: Wild Rift">
+    <div class="Game-card-info">
+        <div class="Game-card-img">
+            <img src="./Riot/LOL-wild-00.jpg" alt="LOGO">
+        </div>
+        <div class="Game-card-text">
+            <h3>League of Legends: Wild Rift</h3>
+            <p>MOBA . Riot Games</p>
+            <span class="rating" data-rating="4.8">4.8/5
+                <span class="stars">
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star">⭐</span>
+                </span>
+            </span>
+        </div>
+         <!-- Download Button -->
+         <div class="download-btn-container">
+            <a href="./Games.html" class="download-btn" download>Download Now</a>
+        </div>
+    </div>
+</div>
+ 
+
+     <div class="Game-card" data-genre="RPG" data-company="miHoYo">
+        <img src="./HOYOVERSE/Genshin-00.png" alt="Genshin Impact">
+        <div class="Game-card-info">
+            <div class="Game-card-img">
+                <img src="./HOYOVERSE/Genshin-0.jpg" alt="LOGO">
+            </div>
+            <div class="Game-card-text">
+                <h3>Genshin Impact</h3>
+                <p>RPG . miHoYo (HoYoverse)</p>
+                <span class="rating" data-rating="4.8">4.8/5
+                    <span class="stars">
+                        <span class="star-filled">⭐</span>
+                        <span class="star-filled">⭐</span>
+                        <span class="star-filled">⭐</span>
+                        <span class="star-filled">⭐</span>
+                        <span class="star">⭐</span>
+                    </span>
+                </span>
+            </div>
+             <!-- Download Button -->
+        <div class="download-btn-container">
+            <a href="./Games.html" class="download-btn" download>Download Now</a>
+        </div>
+        </div>
+    </div>
+    
+    <div class="Game-card" data-genre="RPG" data-company="miHoYo">
+        <img src="./HOYOVERSE/Honkai-3.png" alt="Honkai Impact 3rd">
+        <div class="Game-card-info">
+            <div class="Game-card-img">
+                <img src="./HOYOVERSE/Honkai-0.png" alt="LOGO">
+            </div>
+            <div class="Game-card-text">
+                <h3>Honkai Impact 3rd</h3>
+                <p>RPG . miHoYo (HoYoverse)</p>
+                <span class="rating" data-rating="4.7">4.7/5
+                    <span class="stars">
+                        <span class="star-filled">⭐</span>
+                        <span class="star-filled">⭐</span>
+                        <span class="star-filled">⭐</span>
+                        <span class="star-filled">⭐</span>
+                        <span class="star">⭐</span>
+                    </span>
+                </span>
+            </div>
+             <!-- Download Button -->
+        <div class="download-btn-container">
+            <a href="./Games.html" class="download-btn" download>Download Now</a>
+        </div>
+        </div>
+    </div>
+    
+    <div class="Game-card" data-genre="Visual Novel" data-company="miHoYo">
+        <img src="./HOYOVERSE/Tear-5.png" alt="Tears of Themis">
+        <div class="Game-card-info">
+            <div class="Game-card-img">
+                <img src="./HOYOVERSE/Tear-0.jpg" alt="LOGO">
+            </div>
+            <div class="Game-card-text">
+                <h3>Tears of Themis</h3>
+                <p>Visual Novel . miHoYo (HoYoverse)</p>
+                <span class="rating" data-rating="4.6">4.6/5
+                    <span class="stars">
+                        <span class="star-filled">⭐</span>
+                        <span class="star-filled">⭐</span>
+                        <span class="star-filled">⭐</span>
+                        <span class="star-filled">⭐</span>
+                        <span class="star">⭐</span>
+                    </span>
+                </span>
+            </div>
+             <!-- Download Button -->
+        <div class="download-btn-container">
+            <a href="./Games.html" class="download-btn" download>Download Now</a>
+        </div>
+        </div>
+    </div>
+
+<div class="Game-card" data-genre="RPG" data-company="Bandai Namco Entertainment">
+    <img src="./Bandai/DBZ_3.jpg" alt="Dragon Ball Z: Kakarot">
+    <div class="Game-card-info">
+        <div class="Game-card-img">
+            <img src="./Bandai/DBZ_0.jpg" alt="LOGO">
+        </div>
+        <div class="Game-card-text">
+            <h3>Dragon Ball Z: Kakarot</h3>
+            <p>RPG . Bandai Namco Entertainment</p>
+            <span class="rating" data-rating="4.9">4.9/5
+                <span class="stars">
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star">⭐</span>
+                </span>
+            </span>
+        </div>
+         <!-- Download Button -->
+         <div class="download-btn-container">
+            <a href="./Games.html" class="download-btn" download>Download Now</a>
+        </div>
+    </div>
+</div>
+
+<div class="Game-card" data-genre="Fighting" data-company="Bandai Namco Entertainment">
+    <img src="./Bandai/Naruto-0.jpg" alt="Naruto Shippuden: Ultimate Ninja Storm 4">
+    <div class="Game-card-info">
+        <div class="Game-card-img">
+            <img src="./Bandai/Naruto-0.jpg" alt="LOGO">
+        </div>
+        <div class="Game-card-text">
+            <h3>Naruto Shippuden: UNS(4)</h3>
+            <p>Fighting . Bandai Namco Entertainment</p>
+            <span class="rating" data-rating="4.7">4.7/5
+                <span class="stars">
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star">⭐</span>
+                </span>
+            </span>
+        </div>
+         <!-- Download Button -->
+         <div class="download-btn-container">
+            <a href="./Games.html" class="download-btn" download>Download Now</a>
+        </div>
+    </div>
+</div>
+
+<div class="Game-card" data-genre="RPG" data-company="Bandai Namco Entertainment">
+    <img src="./Bandai/one_piece-0.jpg" alt="One Piece: Odyssey">
+    <div class="Game-card-info">
+        <div class="Game-card-img">
+            <img src="./Bandai/One_Piece-0.jpg" alt="LOGO">
+        </div>
+        <div class="Game-card-text">
+            <h3>One Piece: Odyssey</h3>
+            <p>RPG . Bandai Namco Entertainment</p>
+            <span class="rating" data-rating="4.9">4.9/5
+                <span class="stars">
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star">⭐</span>
+                </span>
+            </span>
+        </div>
+          <!-- Download Button -->
+         <div class="download-btn-container">
+            <a href="./Games.html" class="download-btn" download>Download Now</a>
+        </div>
+    </div>
+</div>
+
+<div class="Game-card" data-genre="RPG" data-company="Bandai Namco Entertainment">
+    <img src="./Bandai/SAO/lost-5.png" alt="Sword Art Online: Lost Song">
+    <div class="Game-card-info">
+        <div class="Game-card-img">
+            <img src="./Bandai/SAO/lost-0.jpg" alt="LOGO">
+        </div>
+        <div class="Game-card-text">
+            <h3>SAO Art Online: Lost Song</h3>
+            <p>RPG . Bandai Namco Entertainment</p>
+            <span class="rating" data-rating="4.6">4.6/5
+                <span class="stars">
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star">⭐</span>
+                </span>
+            </span>
+        </div>
+         <!-- Download Button -->
+         <div class="download-btn-container">
+            <a href="./Games.html" class="download-btn" download>Download Now</a>
+        </div>
+    </div>
+</div>
+
+<div class="Game-card" data-genre="RPG" data-company="Bandai Namco Entertainment">
+    <img src="./Bandai/SAO/hollow-2.jpg" alt="Sword Art Online: Hollow Realization">
+    <div class="Game-card-info">
+        <div class="Game-card-img">
+            <img src="./Bandai/SAO/hollow-0.png" alt="LOGO">
+        </div>
+        <div class="Game-card-text">
+            <h3>SAO: Hollow Realization</h3>
+            <p>RPG . Bandai Namco Entertainment</p>
+            <span class="rating" data-rating="4.7">4.7/5
+                <span class="stars">
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star">⭐</span>
+                </span>
+            </span>
+        </div>
+         <!-- Download Button -->
+         <div class="download-btn-container">
+            <a href="./Games.html" class="download-btn" download>Download Now</a>
+        </div>
+    </div>
+</div>
+
+<div class="Game-card" data-genre="Action" data-company="Bandai Namco Entertainment">
+    <img src="./Bandai/SAO/accel-0.png" alt="Accel World VS Sword Art Online">
+    <div class="Game-card-info">
+        <div class="Game-card-img">
+            <img src="./Bandai/SAO/accel-0.png" alt="LOGO">
+        </div>
+        <div class="Game-card-text">
+            <h3>Accel World VS SAO</h3>
+            <p>Action-RPG . Bandai Namco Entertainment</p>
+            <span class="rating" data-rating="4.7">4.7/5
+                <span class="stars">
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star">⭐</span>
+                </span>
+            </span>
+        </div>
+         <!-- Download Button -->
+         <div class="download-btn-container">
+            <a href="./Games.html" class="download-btn" download>Download Now</a>
+        </div>
+    </div>
+</div>
+
+<div class="Game-card" data-genre="Shooter" data-company="Bandai Namco Entertainment">
+    <img src="./Bandai/SAO/bullet-0.png" alt="Sword Art Online: Fatal Bullet">
+    <div class="Game-card-info">
+        <div class="Game-card-img">
+            <img src="./Bandai/SAO/bullet-0.png" alt="LOGO">
+        </div>
+        <div class="Game-card-text">
+            <h3>Sword Art Online: Fatal Bullet</h3>
+            <p>Shooter-RPG . Bandai Namco Entertainment</p>
+            <span class="rating" data-rating="4.8">4.8/5
+                <span class="stars">
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star">⭐</span>
+                </span>
+            </span>
+        </div>
+         <!-- Download Button -->
+         <div class="download-btn-container">
+            <a href="./Games.html" class="download-btn" download>Download Now</a>
+        </div>
+    </div>
+   </div>
+   <div class="Game-card" data-genre="RPG" data-company="Bandai Namco Entertainment">
+    <img src="./Bandai/SAO/lycoris-0.png" alt="Sword Art Online: Alicization Lycoris">
+    <div class="Game-card-info">
+        <div class="Game-card-img">
+            <img src="./Bandai/SAO/lycoris-0.png" alt="LOGO">
+        </div>
+        <div class="Game-card-text">
+            <h3>SAO: Alicization Lycoris</h3>
+            <p>RPG . Bandai Namco Entertainment</p>
+            <span class="rating" data-rating="4.7">4.7/5
+                <span class="stars">
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star">⭐</span>
+                </span>
+            </span>
+        </div>
+         <!-- Download Button -->
+         <div class="download-btn-container">
+            <a href="./Games.html" class="download-btn" download>Download Now</a>
+        </div>
+    </div>
+</div>
+
+<div class="Game-card" data-genre="RPG" data-company="Bandai Namco Entertainment">
+    <img src="./Bandai/SAO/recoll-0.png" alt="Sword Art Online: Last Recollection">
+    <div class="Game-card-info">
+        <div class="Game-card-img">
+            <img src="./Bandai/SAO/recoll-0.png" alt="LOGO">
+        </div>
+        <div class="Game-card-text">
+            <h3>SAO: Last Recollection</h3>
+            <p>RPG . Bandai Namco Entertainment</p>
+            <span class="rating" data-rating="4.7">4.7/5
+                <span class="stars">
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star">⭐</span>
+                </span>
+            </span>
+        </div>
+         <!-- Download Button -->
+         <div class="download-btn-container">
+            <a href="./Games.html" class="download-btn" download>Download Now</a>
+        </div>
+    </div>
+</div>
+
+<div class="Game-card" data-genre="RPG" data-company="Bandai Namco Entertainment">
+    <img src="./Bandai/SAO/Daydream-0.png" alt="Sword Art Online: Fractured Daydream">
+    <div class="Game-card-info">
+        <div class="Game-card-img">
+            <img src="./Bandai/SAO/Daydream-0.png" alt="LOGO">
+        </div>
+        <div class="Game-card-text">
+            <h3>SAO: Fractured Daydream</h3>
+            <p>RPG . Bandai Namco Entertainment</p>
+            <span class="rating" data-rating="4.5">4.5/5
+                <span class="stars">
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star">⭐</span>
+                </span>
+            </span>
+        </div> 
+        <!-- Download Button -->
+        <div class="download-btn-container">
+           <a href="./Games.html" class="download-btn" download>Download Now</a>
+       </div>
+    </div>
+</div>
+
+<div class="Game-card" data-genre="Action-Adventure" data-company="Bandai Namco Entertainment">
+    <img src="./Sony/GOW-1.jpg" alt="God of War">
+    <div class="Game-card-info">
+        <div class="Game-card-img">
+            <img src="./Sony/GOW-0.jpg" alt="LOGO">
+        </div>
+        <div class="Game-card-text">
+            <h3>God of War</h3>
+            <p>Action-Adventure . Sony Interactive Entertainment</p>
+            <span class="rating" data-rating="4.9">4.9/5
+                <span class="stars">
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star">⭐</span>
+                </span>
+            </span>
+        </div>
+         <!-- Download Button -->
+         <div class="download-btn-container">
+            <a href="./Games.html" class="download-btn" download>Download Now</a>
+        </div>
+    </div>
+</div>
+
+<div class="Game-card" data-genre="Action-Adventure" data-company="Bandai Namco Entertainment">
+    <img src="./Sony/spider-2.jpg" alt="Marvel’s Spider-Man">
+    <div class="Game-card-info">
+        <div class="Game-card-img">
+            <img src="./Sony/spider-0.jpg" alt="LOGO">
+        </div>
+        <div class="Game-card-text">
+            <h3>Marvel’s Spider-Man</h3>
+            <p>Action-Adventure . Sony Interactive Entertainment</p>
+            <span class="rating" data-rating="4.8">4.8/5
+                <span class="stars">
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star">⭐</span>
+                </span>
+            </span>
+        </div>
+         <!-- Download Button -->
+         <div class="download-btn-container">
+            <a href="./Games.html" class="download-btn" download>Download Now</a>
+        </div>
+    </div>
+</div>
+
+<div class="Game-card" data-genre="Action-Adventure" data-company="Bandai Namco Entertainment">
+    <img src="./Sony/Uncharted-0.jpg" alt="Uncharted 4">
+    <div class="Game-card-info">
+        <div class="Game-card-img">
+            <img src="./Sony/Uncharted-0.jpg" alt="LOGO">
+        </div>
+        <div class="Game-card-text">
+            <h3>Uncharted 4</h3>
+            <p>Action-Adventure . Sony Interactive Entertainment</p>
+            <span class="rating" data-rating="4.9">4.9/5
+                <span class="stars">
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star">⭐</span>
+                </span>
+            </span>
+        </div>
+         <!-- Download Button -->
+         <div class="download-btn-container">
+            <a href="./Games.html" class="download-btn" download>Download Now</a>
+        </div>
+    </div>
+</div>
+
+<div class="Game-card" data-genre="Shooter" data-company="Bandai Namco Entertainment">
+    <img src="./Sony/rach-1.jpg" alt="Ratchet & Clank">
+    <div class="Game-card-info">
+        <div class="Game-card-img">
+            <img src="./Sony/rach-0.jpg" alt="LOGO">
+        </div>
+        <div class="Game-card-text">
+            <h3>Ratchet & Clank</h3>
+            <p>Shooter . Sony Interactive Entertainment</p>
+            <span class="rating" data-rating="4.7">4.7/5
+                <span class="stars">
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star">⭐</span>
+                </span>
+            </span>
+        </div>
+         <!-- Download Button -->
+         <div class="download-btn-container">
+            <a href="./Games.html" class="download-btn" download>Download Now</a>
+        </div>
+    </div>
+</div>
+
+<div class="Game-card" data-genre="Action-Adventure" data-company="Bandai Namco Entertainment">
+    <img src="./Sony/Us-1.jpg" alt="The Last of Us">
+    <div class="Game-card-info">
+        <div class="Game-card-img">
+            <img src="./Sony/Us-0.jpg" alt="LOGO">
+        </div>
+        <div class="Game-card-text">
+            <h3>The Last of Us</h3>
+            <p>Action-Adventure . Sony Interactive Entertainment</p>
+            <span class="rating" data-rating="4.9">4.9/5
+                <span class="stars">
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star">⭐</span>
+                </span>
+            </span>
+        </div> <!-- Download Button -->
+        <div class="download-btn-container">
+           <a href="./Games.html" class="download-btn" download>Download Now</a>
+       </div>
+    </div>
+</div>
+
+
+<div class="Game-card" data-genre="Action" data-company="Koei Tecmo">
+    <img src="./Tecmo/Dynasty-2.jpg" alt="Dynasty Warriors 6">
+    <div class="Game-card-info">
+        <div class="Game-card-img">
+            <img src="./Tecmo/Dynasty-0.jpg" alt="LOGO">
+        </div>
+        <div class="Game-card-text">
+            <h3>Dynasty Warriors 6</h3>
+            <p>Action . Koei Tecmo</p>
+            <span class="rating" data-rating="4.7">4.7/5
+                <span class="stars">
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star">⭐</span>
+                </span>
+            </span>
+        </div> <!-- Download Button -->
+        <div class="download-btn-container">
+           <a href="./Games.html" class="download-btn" download>Download Now</a>
+       </div>
+    </div>
+</div>
+
+<div class="Game-card" data-genre="Action" data-company="Koei Tecmo">
+    <img src="./Tecmo/Samurai-5.jpg" alt="Samurai Warriors 5">
+    <div class="Game-card-info">
+        <div class="Game-card-img">
+            <img src="./Tecmo/Samurai-0.jpg" alt="LOGO">
+        </div>
+        <div class="Game-card-text">
+            <h3>Samurai Warriors 5</h3>
+            <p>Action . Koei Tecmo</p>
+            <span class="rating" data-rating="4.8">4.8/5
+                <span class="stars">
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star">⭐</span>
+                </span>
+            </span>
+        </div> <!-- Download Button -->
+        <div class="download-btn-container">
+           <a href="./Games.html" class="download-btn" download>Download Now</a>
+       </div>
+    </div>
+</div>
+
+<div class="Game-card" data-genre="RPG" data-company="Koei Tecmo">
+    <img src="./Tecmo/Blue-0.jpg" alt="Blue Reflection">
+    <div class="Game-card-info">
+        <div class="Game-card-img">
+            <img src="./Tecmo/Blue-0.jpg" alt="LOGO">
+        </div>
+        <div class="Game-card-text">
+            <h3>Blue Reflection</h3>
+            <p>RPG . Koei Tecmo</p>
+            <span class="rating" data-rating="4.5">4.5/5
+                <span class="stars">
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star">⭐</span>
+                </span>
+            </span>
+        </div> <!-- Download Button -->
+        <div class="download-btn-container">
+           <a href="./Games.html" class="download-btn" download>Download Now</a>
+       </div>
+    </div>
+</div>
+
+
+<div class="Game-card" data-genre="Fighting" data-company="NetherRealm Studios">
+    <img src="./Bandai/kombact-1.jpg" alt="Mortal Kombat 11">
+    <div class="Game-card-info">
+        <div class="Game-card-img">
+            <img src="./Bandai/kombact-0.png" alt="LOGO">
+        </div>
+        <div class="Game-card-text">
+            <h3>Mortal Kombat 11</h3>
+            <p>Fighting . NetherRealm Studios</p>
+            <span class="rating" data-rating="4.9">4.9/5
+                <span class="stars">
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star">⭐</span>
+                </span>
+            </span>
+        </div> <!-- Download Button -->
+        <div class="download-btn-container">
+           <a href="./Games.html" class="download-btn" download>Download Now</a>
+       </div>
+    </div>
+</div>
+<div class="Game-card" data-genre="Action" data-name="AOT-Series" data-company="Koei Tecmo">
+    <img src="./Tecmo/AOT/Aot-0.jpg" alt="Attack on Titan ">
+    <div class="Game-card-info">
+        <div class="Game-card-img">
+            <img src="./Tecmo/AOT/Aot-0.jpg" alt="LOGO">
+        </div>
+        <div class="Game-card-text">
+            <h3>Attack on Titan</h3>
+            <p>Action . Koei Tecmo</p>
+            <span class="rating" data-rating="4.5">4.5/5
+                <span class="stars">
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star">⭐</span>
+                </span>
+            </span>
+        </div> <!-- Download Button -->
+        <div class="download-btn-container">
+           <a href="./Games.html" class="download-btn" download>Download Now</a>
+       </div>
+    </div>
+</div>
+
+<div class="Game-card" data-genre="Fighting" data-company="Capcom"> 
+    <img src="./Bandai/fighter-3.jpg" alt="Street Fighter 6">
+    <div class="Game-card-info">
+        <div class="Game-card-img">
+            <img src="./Bandai/fighter-0.jpeg" alt="LOGO">
+        </div>
+        <div class="Game-card-text">
+            <h3>Street Fighter 6</h3>
+            <p>Fighting . Capcom</p>
+            <span class="rating" data-rating="4.9">4.9/5
+                <span class="stars">
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star">⭐</span>
+                </span>
+            </span>
+        </div> <!-- Download Button -->
+        <div class="download-btn-container">
+           <a href="./Games.html" class="download-btn" download>Download Now</a>
+       </div>
+    </div>
+</div>
+
+<div class="Game-card" data-genre="VR-Games" data-company="Beats Games"> 
+    <img src="./VR/beat-1.jpg" alt="Beat Saber">
+    <div class="Game-card-info">
+        <div class="Game-card-img">
+            <img src="./VR/beat-0.png" alt="LOGO">
+        </div>
+        <div class="Game-card-text">
+            <h3>Beat Saber</h3>
+            <p>VR Rhythm . Beat Games</p>
+            <span class="rating" data-rating="4.8">4.8/5
+                <span class="stars">
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star">⭐</span>
+                </span>
+            </span>
+        </div> <!-- Download Button -->
+        <div class="download-btn-container">
+           <a href="./Games.html" class="download-btn" download>Download Now</a>
+       </div>
+    </div>
+</div>
+
+<div class="Game-card" data-genre="VR-Games" data-company="Valve Corporation"> 
+    <img src="./VR/hf-1.jpg" alt="Half-Life: Alyx">
+    <div class="Game-card-info">
+        <div class="Game-card-img">
+            <img src="./VR/hf-0.jpg" alt="LOGO">
+        </div>
+        <div class="Game-card-text">
+            <h3>Half-Life: Alyx</h3>
+            <p>VR FPS . Valve Corporation</p>
+            <span class="rating" data-rating="4.9">4.9/5
+                <span class="stars">
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star">⭐</span>
+                </span>
+            </span>
+        </div> <!-- Download Button -->
+        <div class="download-btn-container">
+           <a href="./Games.html" class="download-btn" download>Download Now</a>
+       </div>
+    </div>
+</div>
+
+<div class="Game-card" data-genre="VR-Games" data-company="VRChat Inc.">
+    <img src="./VR/chat-1.jpg" alt="VRChat">
+    <div class="Game-card-info">
+        <div class="Game-card-img">
+            <img src="./VR/chat-0.jpeg" alt="LOGO">
+        </div>
+        <div class="Game-card-text">
+            <h3>VRChat</h3>
+            <p>Social VR . VRChat Inc.</p>
+            <span class="rating" data-rating="4.7">4.7/5
+                <span class="stars">
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star">⭐</span>
+                </span>
+            </span>
+        </div> <!-- Download Button -->
+        <div class="download-btn-container">
+           <a href="./Games.html" class="download-btn" download>Download Now</a>
+       </div>
+    </div>
+</div>
+
+<div class="Game-card" data-genre="VR-Games" data-company="Stress Level Zero">
+    <img src="./VR/Bone-1.jpg" alt="Boneworks">
+    <div class="Game-card-info">
+        <div class="Game-card-img">
+            <img src="./VR/Bone-0'.png" alt="LOGO">
+        </div>
+        <div class="Game-card-text">
+            <h3>Boneworks</h3>
+            <p>VR Shooter . Stress Level Zero</p>
+            <span class="rating" data-rating="4.5">4.5/5
+                <span class="stars">
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star">⭐</span>
+                </span>
+            </span>
+        </div> <!-- Download Button -->
+        <div class="download-btn-container">
+           <a href="./Games.html" class="download-btn" download>Download Now</a>
+       </div>
+    </div>
+  </div>
+  <div class="Game-card" data-genre="Action" data-company="Koei Tecmo">
+    <img src="./Tecmo/AOT/chain-2.jpg" alt="Attack on Titan: Humanity in Chains">
+    <div class="Game-card-info">
+        <div class="Game-card-img">
+            <img src="./Tecmo/AOT/chain-0.png" alt="LOGO">
+        </div>
+        <div class="Game-card-text">
+            <h3>AOT: Humanity in Chains</h3>
+            <p>Action . Koei Tecmo</p>
+            <span class="rating" data-rating="4.7">4.7/5
+                <span class="stars">
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star">⭐</span>
+                </span>
+            </span>
+        </div> <!-- Download Button -->
+        <div class="download-btn-container">
+           <a href="./Games.html" class="download-btn" download>Download Now</a>
+       </div>
+    </div>
+</div>
+
+<div class="Game-card" data-genre="Action" data-company="Koei Tecmo">
+    <img src="./Tecmo/AOT/Wings-2.jpg" alt="Attack on Titan: Wings of Freedom">
+    <div class="Game-card-info">
+        <div class="Game-card-img">
+            <img src="./Tecmo/AOT/Wings-0.jpg" alt="LOGO">
+        </div>
+        <div class="Game-card-text">
+            <h3>AOT: Wings of Freedom</h3>
+            <p>Action . Koei Tecmo</p>
+            <span class="rating" data-rating="4.7">4.7/5
+                <span class="stars">
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star">⭐</span>
+                </span>
+            </span>
+        </div> <!-- Download Button -->
+        <div class="download-btn-container">
+           <a href="./Games.html" class="download-btn" download>Download Now</a>
+       </div>
+    </div>
+</div>
+
+<div class="Game-card" data-genre="Action" data-company="Koei Tecmo">
+    <img src="./Tecmo/AOT/Future-2.jpg" alt="Attack on Titan 2: Future Coordinates">
+    <div class="Game-card-info">
+        <div class="Game-card-img">
+            <img src="./Tecmo/AOT/Future-0.jpg" alt="LOGO">
+        </div>
+        <div class="Game-card-text">
+            <h3>AOT 2: Future Coordinates</h3>
+            <p>Action . Koei Tecmo</p>
+            <span class="rating" data-rating="4.5">4.5/5
+                <span class="stars">
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star">⭐</span>
+                </span>
+            </span>
+        </div> <!-- Download Button -->
+        <div class="download-btn-container">
+           <a href="./Games.html" class="download-btn" download>Download Now</a>
+       </div>
+    </div>
+</div>
+
+<div class="Game-card" data-genre="Action" data-company="Koei Tecmo">
+    <img src="./Tecmo/AOT/Aot-0.jpg" alt="Attack on Titan 2">
+    <div class="Game-card-info">
+        <div class="Game-card-img">
+            <img src="./Tecmo/AOT/Aot-0.jpg" alt="LOGO">
+        </div>
+        <div class="Game-card-text">
+            <h3>Attack on Titan 2</h3>
+            <p>Action . Koei Tecmo</p>
+            <span class="rating" data-rating="4.5">4.5/5
+                <span class="stars">
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star">⭐</span>
+                </span>
+            </span>
+        </div> <!-- Download Button -->
+        <div class="download-btn-container">
+           <a href="./Games.html" class="download-btn" download>Download Now</a>
+       </div>
+    </div>
+</div>
+
+<div class="Game-card" data-genre="Action" data-company="Koei Tecmo">
+    <img src="./Tecmo/AOT/Assault-1.jpg" alt="Attack on Titan: Assault">
+    <div class="Game-card-info">
+        <div class="Game-card-img">
+            <img src="./Tecmo/AOT/Assault-0.jpg" alt="LOGO">
+        </div>
+        <div class="Game-card-text">
+            <h3>Attack on Titan: Assault</h3>
+            <p>Action . Koei Tecmo</p>
+            <span class="rating" data-rating="4.7">4.7/5
+                <span class="stars">
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star">⭐</span>
+                </span>
+            </span>
+        </div> <!-- Download Button -->
+        <div class="download-btn-container">
+           <a href="./Games.html" class="download-btn" download>Download Now</a>
+       </div>
+    </div>
+</div>
+
+<div class="Game-card" data-genre="Action" data-company="Koei Tecmo"> 
+    <img src="./Tecmo/AOT/Final-3.jpg" alt="Attack on Titan 2: Final Battle">
+    <div class="Game-card-info">
+        <div class="Game-card-img">
+            <img src="./Tecmo/AOT/Final-0.jpg" alt="LOGO">
+        </div>
+        <div class="Game-card-text">
+            <h3>Attack on Titan 2: Final Battle</h3>
+            <p>Action . Koei Tecmo</p>
+            <span class="rating" data-rating="4.8">4.8/5
+                <span class="stars">
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star-filled">⭐</span>
+                    <span class="star">⭐</span>
+                </span>
+            </span>
+        </div>
+    </div> <!-- Download Button -->
+    <div class="download-btn-container">
+       <a href="./Games.html" class="download-btn" download>Download Now</a>
+   </div>
+</div>
+  </div>
+</div>
+<!-- ||||||||||||||||||||||||||||||||||||||||  footer    ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+<footer>
+  <div class="footer-container">
+      <div class="footer-column">
+          <h3>About Us</h3>
+          <p>We are dedicated to bringing the latest video games and consoles to gamers worldwide. From the newest releases to retro classics, we have it all.</p>
+      </div>
+      <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./Games.html">Games</a></li>
+              <li><a href="./VRZone.html">VR Zone</a></li>
+              <li><a href="./Contact.html">Contact</a></li>
+          </ul>
+      </div>
+      <div class="footer-column">
+          <h3>Contact</h3>
+          <ul>
+              <li>Email: onlineshop@tangoline.net</li>
+              <li>Phone: +92 316 0255 319</li>
+              <li>Location: Abc, XYZ Road, SDFFGsd, Karachi 3456, Sindhi, Pakistan.</li>
+          </ul>
+      </div>
+  </div>
+  <div class="footer-social">
+      <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+  </div>
+  <div class="footer-bottom">
+      &copy; 2024 Aptech Project Tangoline.inc ©-All Rights Reserved.
+  </div>
+</footer>
+
+
+<!-- library links -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="./Games.js"></script>
+<script src="./script.js"></script>
+</body>
+</html>

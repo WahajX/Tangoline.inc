@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tangoline.inc-About Us</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- Loader -->
+  <div id="loader" class="loader">
+    <div class="cube">
+      <div class="sides">
+       <div class="top"></div>
+       <div class="right"></div>
+       <div class="bottom"></div>
+       <div class="left"></div>
+       <div class="front"></div>
+       <div class="back"></div>
+      </div>
+    </div>
+    <div class="text"><h2>TANG</h2><img class="imgcon" src="./conb.png" alt=""><h2>LINE</h2></div>
+  </div>
+     <header>
+        <div  class=" navhead">
+            <div class="LOGO"><h2>TANG </h2><img class="imgcon" src="./conb.png" alt=""><h2>LINE</h2></div>
+            <div class="signin"><button id="signin">Sign in</button></div>
+            <div class="container" onclick="toggleMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>  
+              </div>
+              
+              <ul id="menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./Games.html">Games</a></li>
+                <li><a href="./VRZone.html">VR Zone</a></li>
+                <li><a href="./Contact.html">Contact</a></li>
+                <li><button onclick="Signin()" id="sign">Sign in</button></li>
+                <li>
+    </header>
+     
+    <div class="About">
+        <h3>Tangoline/About</h2>
+        <!-- navbar section -->
+        <header id="head1">
+            <div  class="navbar">
+                <div class="LOGO"><h2>TANG </h2><img class="imgcon" src="./conb.png" alt=""><h2>LINE</h2></div>
+                <div class="container" onclick="toggleMenu(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>  
+                  </div>
+
+                  <ul id="menu">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./Games.html">Games</a></li>
+                    <li><a href="./VRZone.html">VR Zone</a></li>
+                    <li><a href="./Contact.html">Contact</a></li>
+                    <li><button onclick="Signin()" id="sign">Sign in</button></li>
+                </ul>
+            </div>
+        </header>
+    <!-- navbar section -->
+   </div>
+
+   <div class="SignOn">
+    <div class="SignOn-Container">
+
+        <div onclick="signinupclose()" class="signin-up-close">
+        <i class="fa-solid fa-x"></i>
+        </div>
+
+        <div class="sign-On-cover">
+            <h2>Sign Up</h2>
+            <p>Not have an account? <span onclick="SignupOpen()">Create a new account</span></p>
+            <div class="sign-up-info">
+              <p>Join our community today and start exploring!</p>
+              <button onclick="SignupOpen()">Sign Up Now</button>
+            </div>
+        </div>  
+        <div class="sign-in-cover">
+          <h2>Sign In</h2>
+          <p>Already have an account? <span onclick="SigninOpen()">Sign in now</span></p>
+          <div class="sign-in-info">
+             <p>Welcome back to the world of gaming!</p>
+             <button onclick="SigninOpen()">Sign In Now</button>
+          </div>
+        </div>
+
+        <form class="signInForm">
+          <h2>Sign In</h2>
+          <input type="text" placeholder="Username or Email Address" required="Email" />
+          <input type="password" placeholder="Password" required="Password" />
+          <div class="remember-me">
+          <input type="checkbox" id="remember-me" /> <label for="remember-me">Remember me</label>  
+         </div>
+          <button onclick="signincom()" id="login" type="submit">Sign In</button>
+        </form>
+
+
+                <!-- Front Side -->
+                  <form class="signUpForm">
+                    <h2>Sign Up</h2>
+                  <input type="text" placeholder="First name" required="First Name" />
+                  <input type="text" placeholder="Last name" required="Last Name" />
+                  <input type="email" placeholder="Email Address" required="Email" />
+                  <input type="date" placeholder="Date of Birth" required max="2008-01-01" />
+                  <div class="Term">
+                  <input type="checkbox" id="Term" required="checked"/> <label for="Term">Terms & Conditions</label>  
+                  </div>
+                  <button onclick="Next()" class="Next" type="submit">Next</button>
+                </form>
+            </div>
+
+            <!-- Back Side -->
+            <div class="signUpback">
+                <h2>Sign Up</h2>
+                <input type="text" placeholder="Username must be at least 5-8 characters" required="Username" />
+                   <input type="password" placeholder="Password Atleast 8-20 characters" required=" password" />
+                   <input type="password" placeholder="Confirm Password Atleast 8-20 characters" required="Confirm Password" />
+                  <button onclick="signupcom()" type="submit">Sign Up</button>
+                </form>
+            </div>
+         </div>
+
+   
+   <section id="abouts" class="abouts-section">
+       <h2>About Us</h2>
+       <div class="abouts-container">
+           <div class="abouts-container-info">
+               <p>
+                   Tangoline Inc. has been a trusted name in the gaming industry for over 10 years. 
+                   Specializing in Video Games, Game Consoles, and more, we offer a wide range of 
+                   gaming products to suit every enthusiast's needs. From distributing pamphlets to 
+                   advertising on television, our marketing efforts have always aimed at reaching our customers effectively.
+               </p>
+               <p>
+                   With the rapid development of the internet, Tangoline Inc. has taken a bold step forward 
+                   by launching a website. Now, finding information about our products has never been easier. 
+                   Whether you're looking for the latest video game releases, comparing console features, or simply 
+                   browsing through our catalog, everything is just a few clicks away.
+               </p>
+               <p>
+                   Our commitment to innovation and customer satisfaction has been the driving force behind our success. 
+                   Tangoline Inc. strives to provide not only the best gaming products but also a seamless shopping 
+                   experience. As the gaming world continues to evolve, we remain dedicated to keeping up with the trends, 
+                   ensuring that our customers always have access to the latest and greatest in the industry.
+               </p>
+           </div>
+        <div class="Abouts-container-image">
+        </div>
+    </div>
+    </section>
+
+<!-- ||||||||||||||||||||||||||||||||||||||||  footer    ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+<footer>
+  <div class="footer-container">
+      <div class="footer-column">
+          <h3>About Us</h3>
+          <p>We are dedicated to bringing the latest video games and consoles to gamers worldwide. From the newest releases to retro classics, we have it all.</p>
+      </div>
+      <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./Games.html">Games</a></li>
+              <li><a href="./VRZone.html">VR Zone</a></li>
+              <li><a href="./Contact.html">Contact</a></li>
+          </ul>
+      </div>
+      <div class="footer-column">
+          <h3>Contact</h3>
+          <ul>
+              <li>Email: onlineshop@tangoline.net</li>
+              <li>Phone: +92 316 0255 319</li>
+              <li>Location: Abc, XYZ Road, SDFFGsd, Karachi 3456, Sindhi, Pakistan.</li>
+          </ul>
+      </div>
+  </div>
+  <div class="footer-social">
+      <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+  </div>
+  <div class="footer-bottom">
+      &copy; 2024 Aptech Project Tangoline.inc ©-All Rights Reserved.
+  </div>
+</footer>
+<!-- library links -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="./script.js"></script>
+<script src="./Games.js"></script>
+</body>
+</html>

@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tangoline.inc-Home</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body id="main-body">
+
+    <!-- Loader -->
+  <div id="loader" class="loader">
+    <div class="cube">
+      <div class="sides">
+       <div class="top"></div>
+       <div class="right"></div>
+       <div class="bottom"></div>
+       <div class="left"></div>
+       <div class="front"></div>
+       <div class="back"></div>
+      </div>
+    </div>
+    <div class="text"><h2>TANG</h2><img class="imgcon" src="./conb.png" alt=""><h2>LINE</h2></div>
+  </div>
+     <header>
+        <div  class=" navhead">
+            <div class="LOGO"><h2>TANG </h2><img class="imgcon" src="./conb.png" alt=""><h2>LINE</h2></div>
+            <div class="signin"><button onclick="Signin()" id="signin">Sign in</button></div>
+            <div class="container" onclick="toggleMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>  
+              </div>
+              
+              <ul id="menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./Games.html">Games</a></li>
+                <li><a href="./VRZone.html">VR Zone</a></li>
+                <li><a href="./Contact.html">Contact</a></li>
+                <li><button onclick="Signin()" id="sign">Sign in</button></li>
+                <li>
+    </header>
+     
+    <div class="Main">
+        <!-- navbar section -->
+        <header id="head1">
+            <div  class="navbar">
+                <div class="LOGO"><h2>TANG </h2><img class="imgcon" src="./conb.png" alt=""><h2>LINE</h2></div>
+                <div class="container" onclick="toggleMenu(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>  
+                  </div>
+
+                  <ul id="menu">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./Games.html">Games</a></li>
+                    <li><a href="./VRZone.html">VR Zone</a></li>
+                    <li><a href="./Contact.html">Contact</a></li>
+                    <li><button onclick="Signin()" id="sign">Sign in</button></li>
+                </ul>
+            </div>
+        </header>
+    </div>
+    <!-- navbar section -->
+        <!-- |||||||||||||||||||||   signin-page  ||||||||||||||||||||||||||||||| -->
+    
+        <div class="SignOn">
+            <div class="SignOn-Container">
+
+                <div onclick="signinupclose()" class="signin-up-close">
+                <i class="fa-solid fa-x"></i>
+                </div>
+
+                <div class="sign-On-cover">
+                    <h2>Sign Up</h2>
+                    <p>Not have an account? <span onclick="SignupOpen()">Create a new account</span></p>
+                    <div class="sign-up-info">
+                      <p>Join our community today and start exploring!</p>
+                      <button onclick="SignupOpen()">Sign Up Now</button>
+                    </div>
+                </div>  
+                <div class="sign-in-cover">
+                  <h2>Sign In</h2>
+                  <p>Already have an account? <span onclick="SigninOpen()">Sign in now</span></p>
+                  <div class="sign-in-info">
+                     <p>Welcome back to the world of gaming!</p>
+                     <button onclick="SigninOpen()">Sign In Now</button>
+                  </div>
+                </div>
+
+                <form class="signInForm">
+                  <h2>Sign In</h2>
+                  <input type="text" placeholder="Username or Email Address" required="Email" />
+                  <input type="password" placeholder="Password" required="Password" />
+                  <div class="remember-me">
+                  <input type="checkbox" id="remember-me" /> <label for="remember-me">Remember me</label>  
+                 </div>
+                  <button onclick="signincom()" id="login" type="submit">Sign In</button>
+                </form>
+
+
+                        <!-- Front Side -->
+                          <form class="signUpForm">
+                            <h2>Sign Up</h2>
+                          <input type="text" placeholder="First name" required="First Name" />
+                          <input type="text" placeholder="Last name" required="Last Name" />
+                          <input type="email" placeholder="Email Address" required="Email" />
+                          <input type="date" placeholder="Date of Birth" required max="2008-01-01" />
+                          <div class="Term">
+                          <input type="checkbox" id="Term" required="checked"/> <label for="Term">Terms & Conditions</label>  
+                          </div>
+                          <button onclick="Next()" class="Next" type="submit">Next</button>
+                        </form>
+                    </div>
+
+                    <!-- Back Side -->
+                    <div class="signUpback">
+                        <h2>Sign Up</h2>
+                        <input type="text" placeholder="Username must be at least 5-8 characters" required="Username" />
+                           <input type="password" placeholder="Password Atleast 8-20 characters" required=" password" />
+                           <input type="password" placeholder="Confirm Password Atleast 8-20 characters" required="Confirm Password" />
+                          <button onclick="signupcom()" type="submit">Sign Up</button>
+                        </form>
+                    </div>
+        </div>
+
+
+<!-- |||||||||||||||||||||   signin-page  |||||||||||||||||||||||||| -->
+    
+<div class="slideshow-container">
+
+    <!-- Dragon Ball Z Slide -->
+    <div class="mySlides fade" style="background-image: url(./Bandai/DBZ_3.jpg);">
+        <div class="caption">
+            <h2>DRAGON BALL Z: KAKAROT</h2>
+            <p> Unleash your inner Saiyan and fight epic battles!</p>
+            <button class="cta-btn">Fight Now</button>
+        </div>
+    </div>
+
+    <!-- League of Legends Slide -->
+    <div class="mySlides fade" style="background-image: url(./Riot/LOL-1.png);">
+        <div class="caption">
+            <h2>LEAGUE OF LEGENDS</h2>
+            <p> Strategize, outplay, and conquer the Rift!</p>
+            <button class="cta-btn">Join the Battle</button>
+        </div>
+    </div>
+
+    <!-- Spider-Man Slide -->
+    <div class="mySlides fade" style="background-image: url(./Sony/spider-2.jpg);">
+        <div class="caption">
+            <h2>MARVEL'S SPIDER-MAN</h2>
+            <p> Swing through New York and become the ultimate hero!</p>
+            <button class="cta-btn">Suit Up</button>
+        </div>
+    </div>
+
+    <!-- Wild Rift Slide -->
+    <div class="mySlides fade" style="background-image: url(./Riot/LOL-wild-0.jpg);">
+        <div class="caption">
+            <h2>LEAGUE OF LEGENDS: WILD RIFT</h2>
+            <p> Take League on the go and dominate anywhere, anytime!</p>
+            <button class="cta-btn">Start Now</button>
+        </div>
+    </div>
+
+    <!-- PUBG Mobile Slide -->
+    <div class="mySlides fade" style="background-image: url(./Riot/pubg-v.png);">
+      <div class="caption">
+        <h2>PUBG X VENOM</h2>
+        <p><span style="color:  rgb(176, 245, 16)">LIMITED EVENT!</span>  Drop in, gear up, and claim your victory!</p>
+        <button class="cta-btn">Join the Battle</button>
+      </div>
+    </div>
+    <!-- Forza Horizon 5 -->
+    <div class="mySlides fade" style="background-image: url(./MC/forza-1.jpg);">
+        <div class="caption">
+            <h2>Forza Horizon 5</h2>
+             <p> Explore the vibrant world of Mexico in Forza Horizon 5.</p>
+             <button class="cta-btn">Start Your Journey</button>
+        </div>
+    </div>
+    <!-- Genshin Impact Slide -->
+    <div class="mySlides fade" style="background-image: url(./HOYOVERSE/Genshin-00.png);">
+        <div class="caption">
+            <h2>GENSHIN IMPACT</h2>
+            <p> Dive into the breathtaking world of Teyvat.</p>
+            <button class="cta-btn">Enter Teyvat</button>
+        </div>
+    </div>
+
+    <!-- God of War Slide -->
+    <div class="mySlides fade" style="background-image: url(./Sony/GOW-3.jpg);">
+        <div class="caption">
+            <h2>GOD OF WAR: RAGNARÖK</h2>
+            <p> Embrace chaos and become a legend of Norse mythology!</p>
+            <button class="cta-btn">Play Now</button>
+        </div>
+    </div>
+    <!-- ROBLOX -->
+     <div class="mySlides fade" style="background-image: url(./MC/Roblox-1.jpg);">
+        <div class="caption">
+            <h2>ROBLOX</h2>
+            <p> Create, play, and explore a vast universe of user-generated games!</p>
+            <button class="cta-btn">Join the Fun</button>
+        </div>
+    </div>
+    <!-- Mortal Kombat Slide -->
+    <div class="mySlides fade" style="background-image: url(./Bandai/kombact-1.jpg);">
+        <div class="caption">
+            <h2>MORTAL KOMBAT 11</h2>
+            <p> Test your skills and deliver fatal blows in the arena!</p>
+            <button class="cta-btn">Fight Now</button>
+        </div>
+    </div>
+
+    <!-- The Last of Us Slide -->
+    <div class="mySlides fade" style="background-image: url(./Sony/Us-1.jpg);">
+        <div class="caption">
+            <h2>THE LAST OF US</h2>
+            <p> Survive a post-apocalyptic world filled with danger.</p>
+            <button class="cta-btn">Survive Today</button>
+        </div>
+    </div>
+
+    <!-- Valorant Slide -->
+    <div class="mySlides fade" style="background-image: url(./Riot/Val-2.jpg);">
+        <div class="caption">
+            <h2>VALORANT</h2>
+            <p> Precision, teamwork, and skill define this tactical shooter.</p>
+            <button class="cta-btn">Play Now</button>
+        </div>
+    </div>
+</div>
+    <!-- Slideshow Container -->
+
+    <div class="Main2">
+        <div class="topgames">
+            <h1>Top Games</h1> <i id="fa-arrow-main2" class="fa-solid fa-arrow-right"></i>
+        </div>
+        
+          <!-- top games list -->
+           <div class="G-slider-container">
+            <button class="prev-btn">‹</button>
+            <div class="G-slider">
+                <div class="G-slide">
+                    <img src="./Riot/pubg-000.png" alt="PUBG">
+                    <div class="G-slide-info">
+                        <div class="G-slide-img">
+                            <img src="./Riot/pubg-0.jpg" alt="LOGO">
+                        </div>
+                        <div class="G-slide-text">
+                            <h3>PUBG Mobile</h3>
+                            <p>Battle Royale . Riot Games, Inc.</p>
+                            <span class="rating"  data-rating="4.5">4.5/5
+                                <span class="stars">
+                                    <span class="star-filled">⭐</span>
+                                    <span class="star-filled">⭐</span>
+                                    <span class="star-filled">⭐</span>
+                                    <span class="star-filled">⭐</span>
+                                    <span class="star">⭐</span>
+                                </span>
+                            </span>
+                        </div>
+                         <!-- Download Button -->
+        <div class="download-btn-container">
+            <a href="./Games.html" class="download-btn" download>Download Now</a>
+        </div>
+                    </div>
+                </div>
+                <div class="G-slide">
+                    <img src="./Sony/GOW-4.jpg" alt="God of War">
+                    <div class="G-slide-info">
+                        <div class="G-slide-img">
+                            <img src="./Sony/GOW-0.jpg" alt="LOGO">
+                        </div>
+                        <div class="G-slide-text">
+                            <h3>God of War</h3>
+                            <p>Action . Sony Interactive Entertainment</p>
+                            <span class="rating" data-rating="4.8">4.8/5
+                                <span class="stars">
+                                    <span class="star-filled">⭐</span>
+                                    <span class="star-filled">⭐</span>
+                                    <span class="star-filled">⭐</span>
+                                    <span class="star-filled">⭐</span>
+                                    <span class="star">⭐</span>
+                                </span>
+                            </span>
+                        </div>
+                         <!-- Download Button -->
+        <div class="download-btn-container">
+            <a href="./Games.html" class="download-btn" download>Download Now</a>
+        </div>
+                    </div>
+                </div>
+                <div class="G-slide">
+                    <img src="./Bandai/Tekken-0.jpg" alt="Tekken">
+                    <div class="G-slide-info">
+                        <div class="G-slide-img">
+                            <img src="./Bandai/Tekken-0.jpg" alt="LOGO">
+                        </div>
+                        <div class="G-slide-text">
+                            <h3>Tekken</h3>
+                            <p>Fighting . Bandai Namco Entertainment Inc.</p>
+                            <span class="rating" data-rating="4.7">4.7/5
+                                <span class="stars">
+                                    <span class="star-filled">⭐</span>
+                                    <span class="star-filled">⭐</span>
+                                    <span class="star-filled">⭐</span>
+                                    <span class="star-filled">⭐</span>
+                                    <span class="star">⭐</span>
+                                </span>
+                            </span>
+                        </div>
+                         <!-- Download Button -->
+        <div class="download-btn-container">
+            <a href="./Games.html" class="download-btn" download>Download Now</a>
+        </div>
+                    </div>
+                </div>
+                <div class="G-slide">
+                    <img src="./HOYOVERSE/Genshin-00.png" alt="Genshin Impact">
+                    <div class="G-slide-info">
+                        <div class="G-slide-img">
+                            <img src="./HOYOVERSE/Genshin-0.jpg" alt="LOGO">
+                        </div>
+                        <div class="G-slide-text">
+                            <h3>Genshin Impact</h3>
+                            <p>RPG . HoYoverse (miHoYo Co., Ltd.)</p>
+                            <span class="rating"  data-rating="4.7">4.7/5
+                                <span class="stars">
+                                    <span class="star-filled">⭐</span>
+                                    <span class="star-filled">⭐</span>
+                                    <span class="star-filled">⭐</span>
+                                    <span class="star-filled">⭐</span>
+                                    <span class="star">⭐</span>
+                                </span>
+                            </span>
+                        </div>
+                         <!-- Download Button -->
+        <div class="download-btn-container">
+            <a href="./Games.html" class="download-btn" download>Download Now</a>
+        </div>
+                    </div>
+                </div>
+                <div class="G-slide">
+                    <img src="./Bandai/DBZ_3.jpg" alt="Dragon Ball Z">
+                    <div class="G-slide-info">
+                        <div class="G-slide-img">
+                            <img src="./Bandai/DBZ_0.jpg" alt="LOGO">
+                        </div>
+                        <div class="G-slide-text">
+                            <h3>Dragon Ball Z</h3>
+                            <p>Fighting . Bandai Namco Entertainment Inc.</p>
+                            <span class="rating"  data-rating="4.9">4.9/5
+                                <span class="stars">
+                                    <span class="star-filled">⭐</span>
+                                    <span class="star-filled">⭐</span>
+                                    <span class="star-filled">⭐</span>
+                                    <span class="star-filled">⭐</span>
+                                    <span class="star">⭐</span>
+                                </span>
+                            </span>
+                        </div>
+                         <!-- Download Button -->
+        <div class="download-btn-container">
+            <a href="./Games.html" class="download-btn" download>Download Now</a>
+        </div>
+                    </div>
+                </div>
+                <div class="G-slide">
+                    <img src="./Tecmo/AOT/Aot-0.jpg" alt="Attack on Titan">
+                    <div class="G-slide-info">
+                        <div class="G-slide-img">
+                            <img src="./Tecmo/AOT/Aot-0.jpg" alt="LOGO">
+                        </div>
+                        <div class="G-slide-text">
+                            <h3>Attack on Titan</h3>
+                            <p>Action . Koei Tecmo Games Co., Ltd.</p>
+                            <span class="rating"  data-rating="4.5">4.5/5
+                                <span class="stars">
+                                    <span class="star-filled">⭐</span>
+                                    <span class="star-filled">⭐</span>
+                                    <span class="star-filled">⭐</span>
+                                    <span class="star-filled">⭐</span>
+                                    <span class="star">⭐</span>
+                                </span>
+                            </span>
+                        </div>
+                         <!-- Download Button -->
+        <div class="download-btn-container">
+            <a href="./Games.html" class="download-btn" download>Download Now</a>
+        </div>
+                    </div>
+                </div>
+                <div class="G-slide">
+                    <img src="./Riot/LOL-wild-1.jpg" alt="League of Legends: Wild Rift">
+                    <div class="G-slide-info">
+                        <div class="G-slide-img">
+                            <img src="./Riot/LOL-wild-0.jpg" alt="LOGO">
+                        </div>
+                        <div class="G-slide-text">
+                            <h3>League of Legends: Wild Rift</h3>
+                            <p>MOBA . Riot Games, Inc.</p>
+                            <span class="rating"  data-rating="4.8">4.8/5
+                                <span class="stars">
+                                    <span class="star-filled">⭐</span>
+                                    <span class="star-filled">⭐</span>
+                                    <span class="star-filled">⭐</span>
+                                    <span class="star-filled">⭐</span>
+                                    <span class="star">⭐</span>
+                                </span>
+                            </span>
+                        </div>
+                         <!-- Download Button -->
+        <div class="download-btn-container">
+            <a href="./Games.html" class="download-btn" download>Download Now</a>
+        </div>
+                    </div>
+                </div>
+                <div class="G-slide">
+                    <img src="./Sony/spider-0.jpg" alt="Spider-Man">
+                    <div class="G-slide-info">
+                        <div class="G-slide-img">
+                            <img src="./Sony/spider-0.jpg" alt="LOGO">
+                        </div>
+                        <div class="G-slide-text">
+                            <h3>Spider-Man</h3>
+                            <p>Action . Sony Interactive Entertainment</p>
+                            <span class="rating"  data-rating="4.9">4.9/5
+                                <span class="stars">
+                                    <span class="star-filled">⭐</span>
+                                    <span class="star-filled">⭐</span>
+                                    <span class="star-filled">⭐</span>
+                                    <span class="star-filled">⭐</span>
+                                    <span class="star">⭐</span>
+                                </span>
+                            </span>
+                        </div>
+                         <!-- Download Button -->
+        <div class="download-btn-container">
+            <a href="./Games.html" class="download-btn" download>Download Now</a>
+        </div>
+                    </div>
+                </div>
+                <div class="G-slide">
+                    <img src="./Riot/Val-1.jpg" alt="Valorant">
+                    <div class="G-slide-info">
+                        <div class="G-slide-img">
+                            <img src="./Riot/Val-0.png" alt="LOGO">
+                        </div>
+                        <div class="G-slide-text">
+                            <h3>Valorant</h3>
+                            <p>Shooter . Riot Games, Inc.</p>
+                            <span class="rating"  data-rating="4.7">4.7/5
+                                <span class="stars">
+                                    <span class="star-filled">⭐</span>
+                                    <span class="star-filled">⭐</span>
+                                    <span class="star-filled">⭐</span>
+                                    <span class="star-filled">⭐</span>
+                                    <span class="star">⭐</span>
+                                </span>
+                            </span>
+                        </div>
+                         <!-- Download Button -->
+        <div class="download-btn-container">
+            <a href="./Games.html" class="download-btn" download>Download Now</a>
+        </div>
+                    </div>
+                </div>
+                        <div class="G-slide">
+            <img src="./Sony/Us-0.jpg" alt="The Last of Us">
+            <div class="G-slide-info">
+                <div class="G-slide-img">
+                    <img src="./Sony/Us-0.jpg" alt="LOGO">
+                </div>
+                <div class="G-slide-text">
+                    <h3>The Last of Us</h3>
+                    <p>Adventure . Sony Interactive Entertainment</p>
+                    <span class="rating"  data-rating="4.8">4.8/5
+                        <span class="stars">
+                            <span class="star-filled">⭐</span>
+                            <span class="star-filled">⭐</span>
+                            <span class="star-filled">⭐</span>
+                            <span class="star-filled">⭐</span>
+                            <span class="star">⭐</span>
+                        </span>
+                    </span>
+                </div>
+                 <!-- Download Button -->
+        <div class="download-btn-container">
+            <a href="./Games.html" class="download-btn" download>Download Now</a>
+        </div>
+            </div>
+        </div>
+        <div class="G-slide">
+            <img src="./Bandai/Naruto-0.jpg" alt="Naruto Shippuden">
+            <div class="G-slide-info">
+                <div class="G-slide-img">
+                    <img src="./Bandai/Naruto-0.jpg" alt="LOGO">
+                </div>
+                <div class="G-slide-text">
+                    <h3>Naruto Shippuden</h3>
+                    <p>Anime Action . Bandai Namco Entertainment Inc.</p>
+                    <span class="rating"  data-rating="4.7">4.7/5
+                        <span class="stars">
+                            <span class="star-filled">⭐</span>
+                            <span class="star-filled">⭐</span>
+                            <span class="star-filled">⭐</span>
+                            <span class="star-filled">⭐</span>
+                            <span class="star">⭐</span>
+                        </span>
+                    </span>
+                </div>
+           <!-- Download Button -->
+        <div class="download-btn-container">
+            <a href="./Games.html" class="download-btn" download>Download Now</a>
+        </div>
+            </div>
+        </div>
+        <div class="G-slide">
+            <img src="./MC/forza-4.jpg" alt="Forza Horizon 4">
+            <div class="G-slide-info">
+                <div class="G-slide-img">
+                    <img src="./MC/forza-4.jpg" alt="LOGO">
+                </div>
+                <div class="G-slide-text">
+                    <h3>Forza Horizon 4</h3>
+                    <p>Racing . Playground Games</p>
+                    <span class="rating"  data-rating="4.6">4.6/5
+                        <span class="stars">
+                            <span class="star-filled">⭐</span>
+                            <span class="star-filled">⭐</span>
+                            <span class="star-filled">⭐</span>
+                            <span class="star-filled">⭐</span>
+                            <span class="star">⭐</span>
+                        </span>
+                    </span>
+                </div>
+                 <!-- Download Button -->
+                 <div class="download-btn-container">
+                    <a href="./Games.html" class="download-btn" download>Download Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="G-slide">
+            <img src="./Tecmo/Samurai-0.jpg" alt="Samurai Warriors">
+            <div class="G-slide-info">
+                <div class="G-slide-img">
+                    <img src="./Tecmo/Samurai-0.jpg" alt="LOGO">
+                </div>
+                <div class="G-slide-text">
+                    <h3>Samurai Warriors</h3>
+                    <p>Action . Koei Tecmo Games Co., Ltd.</p>
+                    <span class="rating" data-rating="4.4">4.4/5
+                        <span class="stars">
+                            <span class="star-filled">⭐</span>
+                            <span class="star-filled">⭐</span>
+                            <span class="star-filled">⭐</span>
+                            <span class="star-filled">⭐</span>
+                            <span class="star">⭐</span>
+                        </span>
+                    </span>
+                </div>
+                 <!-- Download Button -->
+                 <div class="download-btn-container">
+                    <a href="./Games.html" class="download-btn" download>Download Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="G-slide">
+            <img src="./Bandai/SAO/frag-0.png" alt="Sword Art Online">
+            <div class="G-slide-info">
+                <div class="G-slide-img">
+                    <img src="./Bandai/SAO/frag-0.png" alt="LOGO">
+                </div>
+                <div class="G-slide-text">
+                    <h3>Sword Art Online: Holo Fragment</h3>
+                    <p>RPG . Bandai Namco Entertainment Inc.</p>
+                    <span class="rating" data-rating="4.5">4.5/5
+                        <span class="stars">
+                            <span class="star-filled">⭐</span>
+                            <span class="star-filled">⭐</span>
+                            <span class="star-filled">⭐</span>
+                            <span class="star-filled">⭐</span>
+                            <span class="star">⭐</span>
+                        </span>
+                    </span>
+                </div>
+                 <!-- Download Button -->
+                 <div class="download-btn-container">
+                    <a href="./Games.html" class="download-btn" download>Download Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="G-slide">
+            <img src="./VR/beat-1.jpg" alt="Beat Saber">
+            <div class="G-slide-info">
+                <div class="G-slide-img">
+                    <img src="./VR/beat-1.jpg" alt="LOGO">
+                </div>
+                <div class="G-slide-text">
+                    <h3>Beat Saber</h3>
+                    <p>Rhythm . Beat Games</p>
+                    <span class="rating" data-rating="4.4">4.4/5
+                        <span class="stars">
+                            <span class="star-filled">⭐</span>
+                            <span class="star-filled">⭐</span>
+                            <span class="star-filled">⭐</span>
+                            <span class="star-filled">⭐</span>
+                            <span class="star">⭐</span>
+                        </span>
+                    </span>
+                </div>
+                 <!-- Download Button -->
+                 <div class="download-btn-container">
+                    <a href="./Games.html" class="download-btn" download>Download Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="G-slide">
+            <img src="./MC/Halo-00.jpg" alt="Halo Infinite">
+            <div class="G-slide-info">
+                <div class="G-slide-img">
+                    <img src="./MC/Halo-00.jpg" alt="LOGO">
+                </div>
+                <div class="G-slide-text">
+                    <h3>Halo Infinite</h3>
+                    <p>Sci-Fi Action . 343 Industries</p>
+                    <span class="rating" data-rating="4.9">4.9/5
+                        <span class="stars">
+                            <span class="star-filled">⭐</span>
+                            <span class="star-filled">⭐</span>
+                            <span class="star-filled">⭐</span>
+                            <span class="star-filled">⭐</span>
+                            <span class="star">⭐</span>
+                        </span>
+                    </span>
+                </div>
+                 <!-- Download Button -->
+        <div class="download-btn-container">
+            <a href="./Games.html" class="download-btn" download>Download Now</a>
+        </div>
+             </div>
+            </div> 
+                
+                <div class="G-slide">
+                    <div class="G_More">
+                   <a href="./Games.html"> <button class="All_Games"><i class="fa-solid fa-arrow-right"></i> <br> All Games</button></a>
+                </div>
+            </div>
+    </div>
+    <button class="next-btn">›</button>
+  </div>
+</div>
+
+<!-- |||||||||||||||||||||||||||||||||||||||| product section||||||||||||||||||||||||||||||||||||||||||||||||||||||||  -->
+    <section class="products-section">
+        <h1>- OUR BEST PRODUCTS -</h1>
+        <div class="product-cards">           
+             <!-- Product Cards -->
+            <div class="product-card">
+            <div class="Best">Best</div>
+                <div class="A-image"><img src="./Console/PS5.png"class="Avail-product" alt=""></div>
+                <h2>PlayStation 5 (white)</h2>
+                <p><strong>Type:</strong>Gaming Console</p>
+                <p><strong>Brand:</strong> Sony</p>
+                <p><strong>Price:</strong> $499 (Standard)</p>
+                <p><strong>Features:</strong> Supports VR; exclusive games.</p>
+                <div class="slide-btnb">
+                <a href="./VRZone.html"><button class="BUY">Buy</button></a>
+                <button class="slide-btn">🎨›</button>
+            </div>
+            </div>
+
+            <div class=" product-card2">
+                <div class="Best">Best</div>
+                <div class="A-image"><img src="./Console/PS5-B.jpg"class="Avail-product" alt=""></div>
+                <h2>PlayStation 5  (Black)</h2>
+                <p><strong>Type:</strong>Gaming Console</p>
+                <p><strong>Brand:</strong> Sony</p>
+                <p><strong>Price:</strong> $499 (Standard)</p>
+                <p><strong>Features:</strong> Supports VR; exclusive games.</p>
+                <a href="./VRZone.html"><button class="BUY">Buy</button> </a>
+            </div>
+
+            <div class="product-card">
+                <div class="Best">Best</div>
+                <div class="A-image"><img src="./Console/VR-H/META.png"class="Avail-product" alt=""></div>
+                <h2>Meta Quest 3</h2>
+                <p><strong>Type:</strong>VR Headset</p>
+                <p><strong>Brand:</strong> Meta (Facebook)</p>
+                <p><strong>Price:</strong> $499</p>
+                <p><strong>Features:</strong> Standalone, good for gaming/fitness.</p>
+                <a href="./VRZone.html"><button class="BUY">Buy</button> </a>
+            </div>
+            <div class="product-card">
+                <div class="Best">Best</div>
+                <div class="A-image"> <img src="./Console/VR-H/PSVR2.jpeg" class="Avail-product" alt=""></div>
+                <h2>PlayStation VR2</h2>
+                <p><strong>Type:</strong>VR Headset</p>
+                <p><strong>Brand:</strong> Sony</p>
+                <p><strong>Price:</strong> $549</p>
+                <p><strong>Features:</strong> PS5-exclusive, high resolution.</p>
+                <button class="BUY">Buy</button>  
+            </div>
+            <div class="product-card">
+                <div class="Best">Best</div>
+                <div class="A-image"><img src="./Console/VR-H/VALVE.jpg" class="Avail-product"alt=""></div>
+                <h2>Valve Index VR Kit</h2>
+                <p><strong>Type:</strong>VR Headset</p>
+                <p><strong>Brand:</strong> Valve</p>
+                <p><strong>Price:</strong> $999</p>
+                <p><strong>Features:</strong> Best for PCVR gaming.</p>
+                <a href="./VRZone.html"><button class="BUY">Buy</button> </a>
+            </div>
+            <div class="product-card">
+                <div class="Best">Best</div>
+                <div class="A-image"><img src="./Console/F-DIVE/EMOTIV.jpg" class="Avail-product" alt="Emotiv"></div>
+                <h2>Emotiv Insight (BCI)</h2>
+                <p><strong>Type:</strong>Full-Dive Prototype</p>
+                <p><strong>Brand:</strong> Emotiv</p>
+                <p><strong>Price:</strong> $299</p>
+                <p><strong>Features:</strong> EEG-based, experimental immersion.</p>
+                <a href="./VRZone.html"><button class="BUY">Buy</button> </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="quote-container">
+        <video autoplay muted loop class="background-video">
+            <source src="./Banners/VR-Beauty.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p class="quote">
+            "The virtual worlds we explore are more than just games—they are realms where we test our courage, sharpen our wits, and connect with the endless possibilities of our imagination."
+        </p>
+    </div>
+
+    <section class="highlight-section">
+        <h1>"Next-Level Products in the Making"</h1>
+        <div class="highlight-card">
+            <span class="coming-soon">Coming Soon</span>
+            <div class="CS-image"> <img src="./Console/F-DIVE/NEURALINK.jpg" class="NEURALINK" alt="" srcset="">
+            </div>
+            <h2>Neuralink (concept only)</h2>
+            <p><strong>Type:</strong>Full-Dive Prototype</p>
+            <p><strong>Manufacturer:</strong> Neuralink (Elon Musk)</p>
+            <p><strong>Price:</strong> $2,099</p>
+            <p><strong>Features:</strong> Brain-Computer Interface (BCI).</p>
+            <a href="./VRZone.html"><button class="BUY">Pre-Order</button></a>  
+        </div>
+    </section>
+    
+<!-- |||||||||||||||||||||||||||||||||||||||| about section||||||||||||||||||||||||||||||||||||||||||||||||||||||||  -->
+
+     <section id="about" class="about-section">
+            <h2>About Us</h2>
+            <div class="about-container">
+                <div class="about-container-info">
+            <p>
+                Tangoline Inc. has been a trusted name in the gaming industry for over 10 years. 
+                Specializing in Video Games, Game Consoles, and more, we offer a wide range of 
+                gaming products to suit every enthusiast's needs. From distributing pamphlets to 
+                advertising on television, our marketing efforts have always aimed at reaching our customers effectively.
+            </p>
+            <p>
+                With the rapid development of the internet, Tangoline Inc. has taken a bold step forward 
+                by launching a website. Now, finding information about our products has never been easier.........
+            </p>
+            <a href="./about.html" class="btn btn-primary">Read More</a>
+        </div>
+        <div class="About-container-image">
+        </div>
+    </div>
+    </section>
+
+<!-- |||||||||||||||||||||||||||||||||||||||| product comparison||||||||||||||||||||||||||||||||||||||||||||||||||||||||  -->
+
+            <div class="pre-comparison"> 
+               <button class="preCompare" onclick="preCompare()">Compare & Discover the Best Products</button>
+            </div>
+      
+             </div>
+             <div class="compare-cover">
+                <div class="compareDiv">
+                   <div class="comparediv-header">
+                        <select id="compareDiv-by" onchange="CompareSelection()">
+                        <option value="Compare by Price$">Compare by Price$</option>
+                        <option value="Compare by Quality">Compare by Quality</option>
+                        </select>
+                          <h1>Product Comparison</h1>
+                         <i onclick="compareclose()" class="fa-solid fa-x"></i>
+                    </div>
+                  <div class="compareDiv-selector">
+                    <select id="Dropdown" onchange="updateSelection(1)">
+                      <option value="">Select a product</option>
+                      <option value="PlayStation 5 (White)">PlayStation 5 (White)</option>
+                      <option value="PlayStation 5 (Black)">PlayStation 5 (Black)</option>
+                      <option value="PlayStation 4">PlayStation 4</option>
+                      <option value="Xbox Series X">Xbox Series X</option>
+                      <option value="Nintendo Switch OLED">Nintendo Switch OLED</option>
+                      <option value="Meta Quest 3">Meta Quest 3</option>
+                      <option value="PlayStation VR2">PlayStation VR2</option>
+                      <option value="HTC Vive XR Elite">HTC Vive XR Elite</option>
+                      <option value="Valve Index VR Kit">Valve Index VR Kit</option>
+                      <option value="Pico 4">Pico 4</option>
+                      <option value="NeuroSky MindWave">NeuroSky MindWave</option>
+                      <option value="Neuralink (concept only)">Neuralink (concept only)</option>
+                      <option value="Emotiv Insight (BCI)">Emotiv Insight (BCI)</option>
+                    </select>
+                    <button  class="compare-btn"  onclick="compareProducts()">Compare</button>
+                    <select id="Dropdown2" onchange="updateSelection(2)">
+                      <option value="">Select a product</option>
+                      <option value="PlayStation 5 (White)">PlayStation 5 (White)</option>
+                      <option value="PlayStation 5 (Black)">PlayStation 5 (Black)</option>
+                      <option value="PlayStation 4">PlayStation 4</option>
+                      <option value="Xbox Series X">Xbox Series X</option>
+                      <option value="Nintendo Switch OLED">Nintendo Switch OLED</option>
+                      <option value="Meta Quest 3">Meta Quest 3</option>
+                      <option value="PlayStation VR2">PlayStation VR2</option>
+                      <option value="HTC Vive XR Elite">HTC Vive XR Elite</option>
+                      <option value="Valve Index VR Kit">Valve Index VR Kit</option>
+                      <option value="Pico 4">Pico 4</option>
+                      <option value="NeuroSky MindWave">NeuroSky MindWave</option>
+                      <option value="Neuralink (concept only)">Neuralink (concept only)</option>
+                      <option value="Emotiv Insight (BCI)">Emotiv Insight (BCI)</option>
+                    </select>
+                  </div>
+                  <div class="compareDiv-cards">
+                    <div class="compareDiv-card" id="product1-card">
+                      <div class="compareDiv-container">
+                        <div class="compareDiv-img">
+                          <img src="./Console/no-image.png" id="product1-img" alt="Product 1">
+                        </div>
+                        <h2 id="product1-name">Select a product</h2>
+                        <p><strong>Type:</strong> <span id="product1-type"></span></p>
+                        <p><strong>Manufacturer:</strong> <span id="product1-manufacturer"></span></p>
+                        <p><strong>Price:</strong> <span id="product1-price"></span></p>
+                        <p><strong>Features:</strong> <span id="product1-features"></span></p>
+                      </div>
+                    </div>
+                    <div id="compareResult" class="compare-result"></div>
+                    <div class="compareDiv-card" id="product2-card">
+                      <div class="compareDiv-container">
+                        <div class="compareDiv-img">
+                          <img src="./Console/no-image.png" id="product2-img" alt="Product 2">
+                        </div>
+                        <h2 id="product2-name">Select a product</h2>
+                        <p><strong>Type:</strong> <span id="product2-type"></span></p>
+                        <p><strong>Manufacturer:</strong> <span id="product2-manufacturer"></span></p>
+                        <p><strong>Price:</strong> <span id="product2-price"></span></p>
+                        <p><strong>Features:</strong> <span id="product2-features"></span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+
+            <section class="project-teams">
+                <h2>Project Team</h2>
+                <div class="team-member">
+                    <div class="member-details">
+                        <p class="member-number">01</p>
+                        <p class="member-name">Ghulam Mohyuddin Wahaj</p>
+                        <p class="member-role">Front-End Innovator.</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-details">
+                        <p class="member-number">02</p>
+                        <p class="member-name">Hadiqa Jawed</p>
+                        <p class="member-role">Web Developer.</p>
+                    </div>
+                </div>
+            </section>
+            
+
+
+      <section class="association">
+        <h2>In Association With</h2>
+        <div class="association-logos">
+          <div class="logo-item">
+            <img src="./companies/Bandai.jpg" alt="Bandai">
+          </div>
+          <div class="logo-item">
+            <img src="./companies/beat games.jpg" alt="Beat Games">
+          </div>
+          <div class="logo-item">
+            <img src="./companies/capcom.png" alt="Capcom">
+          </div>
+          <div class="logo-item">
+            <img src="./companies/chatinc.png" alt="Chat Inc">
+          </div>
+          <div class="logo-item">
+            <img src="./companies/HOYOVERSE.jpg" alt="Hoyoverse">
+          </div>
+          <div class="logo-item">
+            <img src="./companies/Microsoft-Gaming.png" alt="Microsoft Gaming">
+          </div>
+          <div class="logo-item">
+            <img src="./companies/riot.png" alt="Riot Games">
+          </div>
+          <div class="logo-item">
+            <img src="./companies/Sony.png" alt="Sony">
+          </div>
+          <div class="logo-item">
+            <img src="./companies/stress.png" alt="Stress Level Zero">
+          </div>
+          <div class="logo-item">
+            <img src="./companies/Tecmo.png" alt="Koei Tecmo">
+          </div>
+          <div class="logo-item">
+            <img src="./companies/valve.png" alt="Valve">
+          </div>
+          <div class="logo-item">
+            <img src="./companies/Nether.jpg" alt="Nether">
+          </div>
+        </div>
+      </section>
+
+<!-- ||||||||||||||||||||||||||||||||||||||||  footer    ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>About Us</h3>
+            <p>We are dedicated to bringing the latest video games and consoles to gamers worldwide. From the newest releases to retro classics, we have it all.</p>
+        </div>
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./Games.html">Games</a></li>
+                <li><a href="./VRZone.html">VR Zone</a></li>
+                <li><a href="./Contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Contact</h3>
+            <ul>
+                <li>Email: onlineshop@tangoline.net</li>
+                <li>Phone: +92 316 0255 319</li>
+                <li>Location: Abc, XYZ Road, SDFFGsd, Karachi 3456, Sindhi, Pakistan.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-social">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2024 Aptech Project Tangoline.inc ©-All Rights Reserved.
+    </div>
+</footer>
+<!-- library links -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="./script.js"></script>
+<script src="./Games.js"></script>
+</body>
+</html>

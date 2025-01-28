@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tangoline.inc-VR Zone</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- Loader -->
+  <div id="loader" class="loader">
+    <div class="cube">
+      <div class="sides">
+       <div class="top"></div>
+       <div class="right"></div>
+       <div class="bottom"></div>
+       <div class="left"></div>
+       <div class="front"></div>
+       <div class="back"></div>
+      </div>
+    </div>
+    <div class="text"><h2>TANG</h2><img class="imgcon" src="./conb.png" alt=""><h2>LINE</h2></div>
+  </div>
+     <header>
+        <div  class=" navhead">
+            <div class="LOGO"><h2>TANG </h2><img class="imgcon" src="./conb.png" alt=""><h2>LINE</h2></div>
+            <div class="signin"><button id="signin">Sign in</button></div>
+            <div class="container" onclick="toggleMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>  
+              </div>
+              
+              <ul id="menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./Games.html">Games</a></li>
+                <li><a href="./VRZone.html">VRZone</a></li>
+                <li><a href="./Contact.html">Contact</a></li>
+                <li><button onclick="Signin()" id="sign">Sign in</button></li>
+                <li>
+    </header>
+     
+    <div class="VRZone">
+        <h3>Tangoline/VRZone</h2>
+        <!-- navbar section -->
+        <header id="head1">
+            <div  class="navbar">
+                <div class="LOGO"><h2>TANG </h2><img class="imgcon" src="./conb.png" alt=""><h2>LINE</h2></div>
+                <div class="container" onclick="toggleMenu(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>  
+                  </div>
+
+                  <ul id="menu">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./Games.html">Games</a></li>
+                    <li><a href="./VRZone.html">VR Zone</a></li>
+                    <li><a href="./Contact.html">Contact</a></li>
+                    <li><button onclick="Signin()" id="sign">Sign in</button></li>
+                </ul>
+            </div>
+        </header>
+       <!-- navbar section -->
+    </div>
+
+    <div class="SignOn">
+        <div class="SignOn-Container">
+    
+            <div onclick="signinupclose()" class="signin-up-close">
+            <i class="fa-solid fa-x"></i>
+            </div>
+    
+            <div class="sign-On-cover">
+                <h2>Sign Up</h2>
+                <p>Not have an account? <span onclick="SignupOpen()">Create a new account</span></p>
+                <div class="sign-up-info">
+                  <p>Join our community today and start exploring!</p>
+                  <button onclick="SignupOpen()">Sign Up Now</button>
+                </div>
+            </div>  
+            <div class="sign-in-cover">
+              <h2>Sign In</h2>
+              <p>Already have an account? <span onclick="SigninOpen()">Sign in now</span></p>
+              <div class="sign-in-info">
+                 <p>Welcome back to the world of gaming!</p>
+                 <button onclick="SigninOpen()">Sign In Now</button>
+              </div>
+            </div>
+    
+            <form class="signInForm">
+              <h2>Sign In</h2>
+              <input type="text" placeholder="Username or Email Address" required="Email" />
+              <input type="password" placeholder="Password" required="Password" />
+              <div class="remember-me">
+              <input type="checkbox" id="remember-me" /> <label for="remember-me">Remember me</label>  
+             </div>
+              <button onclick="signincom()" id="login" type="submit">Sign In</button>
+            </form>
+    
+    
+                    <!-- Front Side -->
+                      <form class="signUpForm">
+                        <h2>Sign Up</h2>
+                      <input type="text" placeholder="First name" required="First Name" />
+                      <input type="text" placeholder="Last name" required="Last Name" />
+                      <input type="email" placeholder="Email Address" required="Email" />
+                      <input type="date" placeholder="Date of Birth" required max="2008-01-01" />
+                      <div class="Term">
+                      <input type="checkbox" id="Term" required="checked"/> <label for="Term">Terms & Conditions</label>  
+                      </div>
+                      <button onclick="Next()" class="Next" type="submit">Next</button>
+                    </form>
+                </div>
+    
+                <!-- Back Side -->
+                <div class="signUpback">
+                    <h2>Sign Up</h2>
+                    <input type="text" placeholder="Username must be at least 5-8 characters" required="Username" />
+                       <input type="password" placeholder="Password Atleast 8-20 characters" required=" password" />
+                       <input type="password" placeholder="Confirm Password Atleast 8-20 characters" required="Confirm Password" />
+                      <button onclick="signupcom()" type="submit">Sign Up</button>
+                    </form>
+                </div>
+             </div>
+
+      <section class="VR-section">
+
+        <div>
+          <label for="sortOptions">Sort by:</label>
+          <select id="sortOptions" onchange="sortProducts()">
+             <option value="Defualt">Defualt</option>
+              <option value="price">Price (Low to High)</option>
+              <option value="name">Name (A to Z)</option>
+          </select>
+      </div>
+      
+      <div class="VR-cards" id="productContainer">
+      <!-- Gaming Consoles -->
+      <div class="VR-card">
+        <div class="Best">Best</div>
+            <div class="A-image"><img src="./Console/PS5.png"class="Avail-product" alt=""></div>
+            <h2>PlayStation 5 (white)</h2>
+            <p><strong>Type:</strong>Gaming Console</p>
+            <p><strong>Brand:</strong> Sony</p>
+            <p id="price"><strong>Price:</strong> $499 (Standard)</p>
+            <p><strong>Features:</strong> Supports VR; exclusive games.</p>
+            <div class="slide-butb">
+                <a href="https://images.app.goo.gl/TXQeiDkQLcoaRHt86"><button class="BUY">Buy</button> </a>
+            <button onclick="slidebut()" class="slide-but">🎨›</button>
+        </div>
+        </div>
+        <div class="VR-card2">
+            <div class="Best">Best</div>
+            <div class="A-image"><img src="./Console/PS5-B.jpg"class="Avail-product" alt=""></div>
+            <h2>PlayStation 5  (Black)</h2>
+            <p><strong>Type:</strong>Gaming Console</p>
+            <p><strong>Brand:</strong> Sony</p>
+            <p id="price"><strong>Price:</strong> $499 (Standard)</p>
+            <p><strong>Features:</strong> Supports VR; exclusive games.</p>
+            <a href="https://images.app.goo.gl/TXQeiDkQLcoaRHt86"><button class="BUY">Buy</button> </a>
+        </div>
+      <div class="VR-card">
+        <div class="Best">Best</div>
+        <div class="A-image"><img src="./Console/VR-H/VALVE.jpg" class="Avail-product" alt="Valve Index VR Kit"></div>
+        <h2>Valve Index VR Kit</h2>
+        <p><strong>Type:</strong> VR Headset</p>
+        <p><strong>Brand:</strong> Valve</p>
+        <p id="price"><strong>Price:</strong> $999</p>
+        <p><strong>Features:</strong> Best for PCVR gaming.</p>
+        <a href="https://images.app.goo.gl/TXQeiDkQLcoaRHt86"><button class="BUY">Buy</button> </a>
+     </div>
+     <div class="VR-card">
+        <div class="Best">Best</div>
+        <div class="A-image"><img src="./Console/VR-H/PICO4.jpg" class="Avail-product" alt="Pico 4"></div>
+        <h2>Pico 4</h2>
+        <p><strong>Type:</strong> VR Headset</p>
+        <p><strong>Brand:</strong> Pico</p>
+        <p id="price"><strong>Price:</strong> $429</p>
+        <p><strong>Features:</strong> Standalone, lightweight.</p>
+        <a href="https://images.app.goo.gl/TXQeiDkQLcoaRHt86"><button class="BUY">Buy</button> </a>
+     </div>
+      <div class="VR-card">
+          <div class="Best">Best</div>
+          <div class="A-image"><img src="./Console/PS4.jpg" class="Avail-product" alt="PlayStation 4"></div>
+          <h2>PlayStation 4</h2>
+          <p><strong>Type:</strong> Gaming Console</p>
+          <p><strong>Brand:</strong> Sony</p>
+          <p id="price"><strong>Price:</strong> $299</p>
+          <p><strong>Features:</strong> Large game library; VR support with add-ons.</p>
+          <a href="https://images.app.goo.gl/TXQeiDkQLcoaRHt86"><button class="BUY">Buy</button> </a>
+      </div>
+      <div class="VR-card">
+          <div class="Best">Best</div>
+          <div class="A-image"><img src="./Console/XBOX.png" class="Avail-product" alt="Xbox Series X"></div>
+          <h2>Xbox Series X</h2>
+          <p><strong>Type:</strong> Gaming Console</p>
+          <p><strong>Brand:</strong> Microsoft</p>
+          <p id="price"><strong>Price:</strong> $499</p>
+          <p><strong>Features:</strong> Powerful hardware, Game Pass.</p>
+          <a href="https://images.app.goo.gl/TXQeiDkQLcoaRHt86"><button class="BUY">Buy</button> </a>
+      </div>
+      <div class="VR-card">
+          <div class="Best">Best</div>
+          <div class="A-image"><img src="./Console/OLED.jpg" class="Avail-product" alt="Nintendo Switch OLED"></div>
+          <h2>Nintendo Switch OLED</h2>
+          <p><strong>Type:</strong> Gaming Console</p>
+          <p><strong>Brand:</strong> Nintendo</p>
+          <p id="price"><strong>Price:</strong> $349</p>
+          <p><strong>Features:</strong> Portable hybrid console.</p>
+          <a href="https://images.app.goo.gl/TXQeiDkQLcoaRHt86"><button class="BUY">Buy</button> </a>
+      </div>
+  
+      <!-- VR Headsets -->
+      <div class="VR-card">
+          <div class="Best">Best</div>
+          <div class="A-image"><img src="./Console/VR-H/META.png" class="Avail-product" alt="Meta Quest 3"></div>
+          <h2>Meta Quest 3</h2>
+          <p><strong>Type:</strong> VR Headset</p>
+          <p><strong>Brand:</strong> Meta (Facebook)</p>
+          <p id="price"><strong>Price:</strong> $499</p>
+          <p><strong>Features:</strong> Standalone, good for gaming/fitness.</p>
+          <a href="https://images.app.goo.gl/TXQeiDkQLcoaRHt86"><button class="BUY">Buy</button> </a>  
+      </div>
+      <div class="VR-card">
+        <div class="Best">Best</div>
+        <div class="A-image"><img src="./Console/F-DIVE/NEURALINK.jpg" class="Avail-product" alt="Neuralink"></div>
+        <h2>Neuralink (concept only)</h2>
+        <p><strong>Type:</strong> Full-Dive Prototype</p>
+        <p><strong>Brand:</strong> Neuralink (Elon Musk)</p>
+        <p id="price"><strong>Price:</strong> $2,099</p>
+        <p><strong>Features:</strong> Brain-Computer Interface (BCI).</p>
+        <a href="https://images.app.goo.gl/rCsJLn3xkSi5qsto8"><button class="BUY">Pre-Order</button></a>  
+     </div>
+      <div class="VR-card">
+          <div class="Best">Best</div>
+          <div class="A-image"><img src="./Console/VR-H/PSVR2.jpeg" class="Avail-product" alt="PlayStation VR2"></div>
+          <h2>PlayStation VR2</h2>
+          <p><strong>Type:</strong> VR Headset</p>
+          <p><strong>Brand:</strong> Sony</p>
+          <p id="price"><strong>Price:</strong> $549</p>
+          <p><strong>Features:</strong> PS5-exclusive, high resolution.</p>
+          <a href="https://images.app.goo.gl/TXQeiDkQLcoaRHt86"><button class="BUY">Buy</button> </a>
+      </div>
+      <div class="VR-card">
+          <div class="Best">Best</div>
+          <div class="A-image"><img src="./Console/VR-H/VIVE.png" class="Avail-product" alt="HTC Vive XR Elite"></div>
+          <h2>HTC Vive XR Elite</h2>
+          <p><strong>Type:</strong> VR Headset</p>
+          <p><strong>Brand:</strong> HTC</p>
+          <p id="price"><strong>Price:</strong> $999</p>
+          <p><strong>Features:</strong> PCVR and standalone hybrid features.</p>
+          <a href="https://images.app.goo.gl/TXQeiDkQLcoaRHt86"><button class="BUY">Buy</button> </a>
+      </div>
+  
+      <!-- Half-Dive Device -->
+      <div class="VR-card">
+          <div class="Best">Best</div>
+          <div class="A-image"><img src="./Console/H-DIVE/N-SKY.jpg" class="Avail-product" alt="NeuroSky MindWave"></div>
+          <h2>NeuroSky MindWave</h2>
+          <p><strong>Type:</strong> Half-Dive Device</p>
+          <p><strong>Brand:</strong> NeuroSky</p>
+          <p id="price"><strong>Price:</strong> $399</p>
+          <p><strong>Features:</strong> Brainwave interface, basic immersion.</p>
+          <a href="https://images.app.goo.gl/TXQeiDkQLcoaRHt86"><button class="BUY">Buy</button> </a>
+      </div>
+  
+      <!-- Full-Dive Prototype -->
+
+      <div class="VR-card">
+          <div class="Best">Best</div>
+          <div class="A-image"><img src="./Console/F-DIVE/EMOTIV.jpg" class="Avail-product" alt="Emotiv Insight"></div>
+          <h2>Emotiv Insight (BCI)</h2>
+          <p><strong>Type:</strong> Full-Dive Prototype</p>
+          <p><strong>Brand:</strong> Emotiv</p>
+          <p id="price"><strong>Price:</strong> $599</p>
+          <p><strong>Features:</strong> EEG-based, experimental immersion.</p>
+          <a href="https://images.app.goo.gl/TXQeiDkQLcoaRHt86"><button class="BUY">Buy</button> </a>
+      </div>
+    </div>
+     </section>
+     <div class="VRH">
+    <section class="highlight-section">
+      <h1>"Next-Level Products in the Making"</h1>
+      <div class="highlight-card">
+          <span class="coming-soon">Coming Soon</span>
+          <div class="CS-image"> <img src="./Console/F-DIVE/NEURALINK.jpg" class="NEURALINK" alt="Neuralink"></div>
+          <h2>Neuralink (concept only)</h2>
+          <p><strong>Type:</strong> Full-Dive Prototype</p>
+          <p><strong>Manufacturer:</strong> Neuralink (Elon Musk)</p>
+          <p><strong>Price:</strong> $2,099</p>
+          <p><strong>Features:</strong> Brain-Computer Interface (BCI).</p>
+          <a href="https://images.app.goo.gl/rCsJLn3xkSi5qsto8"><button class="BUY">Pre-Order</button></a>
+      </div>
+    </section>
+  </div>
+
+<!-- ||||||||||||||||||||||||||||||||||||||||  footer    ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+<footer>
+  <div class="footer-container">
+      <div class="footer-column">
+          <h3>About Us</h3>
+          <p>We are dedicated to bringing the latest video games and consoles to gamers worldwide. From the newest releases to retro classics, we have it all.</p>
+      </div>
+      <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./Games.html">Games</a></li>
+              <li><a href="./VRZone.html">VR Zone</a></li>
+              <li><a href="./Contact.html">Contact</a></li>
+          </ul>
+      </div>
+      <div class="footer-column">
+          <h3>Contact</h3>
+          <ul>
+              <li>Email: onlineshop@tangoline.net</li>
+              <li>Phone: +92 316 0255 319</li>
+              <li>Location: Abc, XYZ Road, SDFFGsd, Karachi 3456, Sindhi, Pakistan.</li>
+          </ul>
+      </div>
+  </div>
+  <div class="footer-social">
+      <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+  </div>
+  <div class="footer-bottom">
+      &copy; 2024 Aptech Project Tangoline.inc ©-All Rights Reserved.
+  </div>
+</footer>
+<!-- library links -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="./script.js"></script>
+<script src="./Games.js"></script>
+</body>
+</html>
